@@ -1,0 +1,66 @@
+@use "tablet_responsive" as tablet;
+@use "phone_responsive" as mobile;
+
+html {
+  font-size: 62.5%;
+  
+  @media (max-width: 991px) {
+    font-size: 50%; // タブレットサイズ
+  }
+
+  @media (max-width: 767px) {
+    font-size: 40%; // モバイルサイズ
+  }
+
+  @media (max-width: 520px) {
+    font-size: 31.25%; // モバイルサイズ
+  }
+}
+body{
+  font-family: 'Tsukushi B Round Gothic';
+}
+main{
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none ;
+}
+a {
+  transition: all 0.3s ease;
+}
+a:hover{
+  opacity: 0.6;
+}
+
+// ヘッダー
+.header{
+  width: 92%;
+  margin: 2.5rem auto 0 auto;
+  height: 9rem;
+  border-radius: 4rem;
+  padding: 1.1rem 1.7rem;
+  border: 1px solid #FFF;
+  display: flex;
+  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.25);
+  .header_left{
+    width: 16.4rem;
+    margin-left: 1rem;
+  }
+  .header_right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    ul{
+      display: flex;
+      color: #666666;
+      li{
+        font-size: 1.6rem;
+        margin-right: 2.5rem;
+      }
+    }
+  }
+}

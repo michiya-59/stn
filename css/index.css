@@ -1,0 +1,71 @@
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 520px) {
+  html {
+    font-size: 31.25%;
+  }
+}
+
+body {
+  font-family: "Tsukushi B Round Gothic";
+}
+
+main {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.header {
+  width: 92%;
+  margin: 2.5rem auto 0 auto;
+  height: 9rem;
+  border-radius: 4rem;
+  padding: 1.1rem 1.7rem;
+  border: 1px solid #FFF;
+  display: flex;
+  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.25);
+}
+.header .header_left {
+  width: 16.4rem;
+  margin-left: 1rem;
+}
+.header .header_right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header .header_right ul {
+  display: flex;
+  color: #666666;
+}
+.header .header_right ul li {
+  font-size: 1.6rem;
+  margin-right: 2.5rem;
+}/*# sourceMappingURL=index.css.map */
