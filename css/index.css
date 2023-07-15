@@ -42,18 +42,35 @@ a:hover {
   opacity: 0.6;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 128rem;
+  box-sizing: content-box;
+  padding: 0 4.5rem;
+}
+
+.common_size16 {
+  font-size: 1.6rem;
+}
+
+.common_size20 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .header {
   width: 92%;
   margin: 2.5rem auto 0 auto;
-  height: 9rem;
+  height: 8rem;
   border-radius: 4rem;
   padding: 1.1rem 1.7rem;
-  border: 1px solid #FFF;
+  border: 1px solid white;
   display: flex;
   box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.25);
 }
 .header .header_left {
-  width: 16.4rem;
+  width: 11%;
   margin-left: 1rem;
 }
 .header .header_right {
@@ -68,4 +85,110 @@ a:hover {
 .header .header_right ul li {
   font-size: 1.6rem;
   margin-right: 2.5rem;
+}
+
+.profile {
+  border-radius: 10px;
+  background: var(--unnamed, linear-gradient(90deg, #8E9EAB 0%, #EEF2F3 100%));
+  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.25);
+  width: 51.2rem;
+  height: 14.4rem;
+  position: relative;
+  margin-top: 9rem;
+}
+.profile .profile_self_image {
+  width: 12.7rem;
+  height: 12.5rem;
+  position: absolute;
+  top: -6.5rem;
+  left: 19.2rem;
+}
+.profile .profile_self_image img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2.8rem;
+}
+.profile .profile_info {
+  display: flex;
+  padding: 7.5rem 4.5rem 0 4.5rem;
+  justify-content: space-evenly;
+}
+.profile .profile_info .profile_info_details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+  color: white;
+}
+.profile .profile_info .profile_info_details p:nth-child(1) {
+  margin-bottom: 1rem;
+}
+.profile .profile_info .profile_info_details .profile_grade {
+  display: flex;
+  border-radius: 0.5rem;
+  background: var(--unnamed, linear-gradient(90deg, #00B379 0%, #47D3A6 37.5%, #78F5CD 52.6%, #47D3A6 67.19%, #00B379 100%));
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.profile .profile_info .profile_info_details .profile_grade .fa-solid {
+  font-size: 2rem;
+}
+.profile .profile_info .profile_info_details .profile_grade .emerald {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+.profile .profile_info .sales_batch {
+  position: relative;
+  right: 4rem;
+}
+
+.uranai_link {
+  display: block;
+  width: 37.5rem;
+}
+.uranai_link .uranai {
+  height: 6.2rem;
+  border-radius: 10px;
+  background: var(--unnamed, linear-gradient(90deg, #DBAB00 0%, #F2D15E 32.29%, #FFE794 50%, #F2D15E 69.79%, #DBAB00 100%, #DBAB00 100%));
+  box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.uranai_link .uranai .uranai_icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.4rem;
+}
+.uranai_link .uranai p {
+  color: white;
+}
+
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.menu_list .menu_part {
+  width: 20.5rem;
+  height: 9.6rem;
+  border-radius: 0.5rem;
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
+  box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 2rem 0;
+}
+.menu_list .menu_part .menu_icon {
+  width: 4rem;
+  height: 4rem;
+}
+.menu_list .menu_part p {
+  font-weight: bold;
+  color: white;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=index.css.map */
