@@ -363,3 +363,43 @@ main{
     }
   }
 }
+
+// reservation_confirm
+.confirm_text{
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+  color: $black;
+}
+.reservation_confirm_container{
+  width: 50.4rem;
+  height: auto;
+  margin: 0 auto 2rem auto;
+  border: 1px solid #dcb887;
+  .confirm_title{
+    padding: 1.5rem;
+    color: white;
+    background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
+  }
+  .confirm_info{
+    color: $black;
+    .confirm_info_part{
+      padding: 1rem 1.5rem;
+      display: flex;
+      border-bottom: 1px dotted #CDCDCD;
+      p:nth-child(1){
+        width: 30%;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.reservation_confirm_switch_btn{
+  display: flex;
+  width: 40rem;
+  margin: 0 auto 1rem auto;
+  justify-content: space-between;
+  a{
+    background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, $beige 100%));
+    color: white;
+  }
+}
