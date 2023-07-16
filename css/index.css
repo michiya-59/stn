@@ -78,6 +78,11 @@ a:hover {
   color: white;
 }
 
+.common_btn_beige_background {
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
+  color: white;
+}
+
 .common_btn_content {
   display: block;
   width: 18.5rem;
@@ -97,6 +102,11 @@ a:hover {
   text-align: center;
   color: #5C5C5C;
   margin-bottom: 1.3rem;
+}
+
+.common_box_beige {
+  border: 1px solid #d6ae7b;
+  color: #d6ae7b;
 }
 
 .underline::before, .underline::after {
@@ -277,10 +287,6 @@ main {
   color: #EACDA3;
   background: linear-gradient(90deg, rgba(234, 205, 163, 0.16) 0%, rgba(214, 174, 123, 0.16) 100%);
 }
-.reservation_switch_btn a:nth-child(2) {
-  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
-  color: white;
-}
 
 .search select {
   padding: 0.5rem 1rem;
@@ -290,9 +296,7 @@ main {
 }
 
 .search .search_btn {
-  border: 1px solid #d6ae7b;
   width: 6.1rem;
-  color: #d6ae7b;
   height: 3rem;
   border-radius: 2px;
   text-align: center;
@@ -337,7 +341,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
 }
 .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn .reservation_calender {
   width: 2rem;
@@ -404,4 +407,40 @@ main {
 .reservation_confirm_switch_btn a {
   background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
   color: white;
+}
+
+.reservation_status_list {
+  margin: 3rem 0 10rem 0;
+}
+.reservation_status_list .reservation_status_part {
+  margin-bottom: 1.8rem;
+  width: 49.5rem;
+  border: 1px solid #DCDCDC;
+  padding: 1rem;
+  color: #5C5C5C;
+}
+.reservation_status_list .reservation_status_part .reservation_status_top {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.reservation_status_list .reservation_status_part .reservation_status_top p:nth-child(1) {
+  border-radius: 0.5rem;
+  padding: 0.4rem 2.3rem;
+  margin-right: 1rem;
+}
+.reservation_status_list .reservation_status_part .reservation_status_top p:nth-child(2) {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+}
+.reservation_status_list .reservation_status_part .reservation_status_bottom {
+  display: flex;
+}
+.reservation_status_list .reservation_status_part .reservation_status_bottom .cancel_btn {
+  width: 10rem;
+  border-radius: 0.2rem;
+  border: 1px solid #525252;
+  text-align: center;
+  line-height: 3.3rem;
+  margin-left: auto;
 }/*# sourceMappingURL=index.css.map */
