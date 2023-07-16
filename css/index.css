@@ -363,4 +363,45 @@ main {
   font-size: 1.4rem;
   line-height: 2.7rem;
   padding-left: 2rem;
+}
+
+.confirm_text {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+  color: #5C5C5C;
+}
+
+.reservation_confirm_container {
+  width: 50.4rem;
+  height: auto;
+  margin: 0 auto 2rem auto;
+  border: 1px solid #dcb887;
+}
+.reservation_confirm_container .confirm_title {
+  padding: 1.5rem;
+  color: white;
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
+}
+.reservation_confirm_container .confirm_info {
+  color: #5C5C5C;
+}
+.reservation_confirm_container .confirm_info .confirm_info_part {
+  padding: 1rem 1.5rem;
+  display: flex;
+  border-bottom: 1px dotted #CDCDCD;
+}
+.reservation_confirm_container .confirm_info .confirm_info_part p:nth-child(1) {
+  width: 30%;
+  font-weight: bold;
+}
+
+.reservation_confirm_switch_btn {
+  display: flex;
+  width: 40rem;
+  margin: 0 auto 1rem auto;
+  justify-content: space-between;
+}
+.reservation_confirm_switch_btn a {
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
+  color: white;
 }/*# sourceMappingURL=index.css.map */
