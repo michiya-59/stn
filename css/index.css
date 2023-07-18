@@ -67,6 +67,10 @@ a:hover {
   font-size: 1.3rem;
 }
 
+.common_size18 {
+  font-size: 1.8rem;
+}
+
 .common_a {
   color: #0085FF;
 }
@@ -583,4 +587,42 @@ main {
 
 .contact_btn a {
   margin: 5rem auto;
+}
+
+.bonus_container {
+  background: white;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+.bonus_container .bonus_list {
+  margin-top: 2.5rem;
+}
+.bonus_container .bonus_list .bonus_part {
+  width: 49%;
+  border: 1px solid #d6ae7b;
+  display: flex;
+  margin-bottom: 0.7rem;
+}
+.bonus_container .bonus_list .bonus_part .bonus_title {
+  position: relative;
+  display: flex;
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
+  color: white;
+  width: 37.8%;
+  padding: 1rem;
+}
+.bonus_container .bonus_list .bonus_part .bonus_title .triangle {
+  width: 2.8rem;
+  height: 2.7rem;
+  position: absolute;
+  right: -2rem;
+  top: 21%;
+}
+.bonus_container .bonus_list .bonus_part .bonus_title .triangle img {
+  height: 100%;
+}
+.bonus_container .bonus_list .bonus_part .bonus_data {
+  width: 62.2%;
+  padding: 1rem;
+  text-align: right;
 }/*# sourceMappingURL=index.css.map */
