@@ -52,6 +52,9 @@ $base_color: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, $beige 100%));
 $border_radius: 0.5rem;
 
 // 共通部品
+.beige{
+  color: $beige;
+}
 .common_size16{
   font-size: 1.6rem;
 }
@@ -97,12 +100,10 @@ $border_radius: 0.5rem;
     margin-bottom: 1.3rem;
   }
 }
-
 .common_box_beige{
   border: 1px solid $beige;
   color: $beige;
 }
-
 .underline::before ,.underline::after{
   content: '';
   display: block;
@@ -113,7 +114,6 @@ $border_radius: 0.5rem;
 .underline::after {
   margin-top: 3px;
 }
-
 .top_background{
   height: 21rem;
   width: 100%;
@@ -132,6 +132,34 @@ $border_radius: 0.5rem;
 }
 .common_merge{
   margin: 5rem 0;
+}
+.common_list_title_background{
+  height: auto;
+  margin: 0 auto 2rem auto;
+  border: 1px solid #dcb887;
+  .common_list_title{
+    padding: 1.5rem;
+    color: white;
+    background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
+  }
+}
+.common_list_part{
+  padding: 1rem 1.5rem;
+  display: flex;
+  border-bottom: 1px dotted #CDCDCD;
+  p:nth-child(1){
+    width: 30%;
+    font-weight: bold;
+    color: $black;
+  }
+}
+
+.detail_btn{
+  margin-left: auto;
+  a{
+    border-radius: 0.3rem;
+    padding: 0.5rem 2rem;
+  }
 }
 // 共通部品
 
@@ -395,25 +423,8 @@ main{
 }
 .reservation_confirm_container{
   width: 50.4rem;
-  height: auto;
-  margin: 0 auto 2rem auto;
-  border: 1px solid #dcb887;
-  .confirm_title{
-    padding: 1.5rem;
-    color: white;
-    background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
-  }
   .confirm_info{
     color: $black;
-    .confirm_info_part{
-      padding: 1rem 1.5rem;
-      display: flex;
-      border-bottom: 1px dotted #CDCDCD;
-      p:nth-child(1){
-        width: 30%;
-        font-weight: bold;
-      }
-    }
   }
 }
 .reservation_confirm_switch_btn{
@@ -527,3 +538,35 @@ main{
   }
 }
 
+// connect_service
+.service_detail_title{
+  font-size: 25px;
+  color: $beige;
+  text-align: center;
+}
+.service_catch_copy{
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+.service_detail_bottom{
+  font-size: 1.7rem;
+  width: 63rem;
+  margin: 2rem auto;
+  line-height: 177.5%;
+}
+.guide_text{
+  font-size: 1.5rem;
+  text-align: center;
+  color: $beige;
+  margin: 2rem 0;
+}
+.guide_arrow{
+  margin: 0 auto;
+  width: 5rem;
+}
+.contact_btn a{
+  margin: 5rem auto;
+}

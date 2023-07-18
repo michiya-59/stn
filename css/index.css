@@ -50,6 +50,10 @@ a:hover {
   padding: 0 4.5rem;
 }
 
+.beige {
+  color: #d6ae7b;
+}
+
 .common_size16 {
   font-size: 1.6rem;
 }
@@ -141,6 +145,36 @@ a:hover {
 
 .common_merge {
   margin: 5rem 0;
+}
+
+.common_list_title_background {
+  height: auto;
+  margin: 0 auto 2rem auto;
+  border: 1px solid #dcb887;
+}
+.common_list_title_background .common_list_title {
+  padding: 1.5rem;
+  color: white;
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
+}
+
+.common_list_part {
+  padding: 1rem 1.5rem;
+  display: flex;
+  border-bottom: 1px dotted #CDCDCD;
+}
+.common_list_part p:nth-child(1) {
+  width: 30%;
+  font-weight: bold;
+  color: #5C5C5C;
+}
+
+.detail_btn {
+  margin-left: auto;
+}
+.detail_btn a {
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
 }
 
 main {
@@ -398,26 +432,9 @@ main {
 
 .reservation_confirm_container {
   width: 50.4rem;
-  height: auto;
-  margin: 0 auto 2rem auto;
-  border: 1px solid #dcb887;
-}
-.reservation_confirm_container .confirm_title {
-  padding: 1.5rem;
-  color: white;
-  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
 }
 .reservation_confirm_container .confirm_info {
   color: #5C5C5C;
-}
-.reservation_confirm_container .confirm_info .confirm_info_part {
-  padding: 1rem 1.5rem;
-  display: flex;
-  border-bottom: 1px dotted #CDCDCD;
-}
-.reservation_confirm_container .confirm_info .confirm_info_part p:nth-child(1) {
-  width: 30%;
-  font-weight: bold;
 }
 
 .reservation_confirm_switch_btn {
@@ -529,4 +546,41 @@ main {
 }
 .event_btns a:nth-child(3) {
   border-radius: 0.5rem 10rem 10rem 0.5rem;
+}
+
+.service_detail_title {
+  font-size: 25px;
+  color: #d6ae7b;
+  text-align: center;
+}
+
+.service_catch_copy {
+  font-size: 25px;
+  color: #5C5C5C;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.service_detail_bottom {
+  font-size: 1.7rem;
+  width: 63rem;
+  margin: 2rem auto;
+  line-height: 177.5%;
+}
+
+.guide_text {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #d6ae7b;
+  margin: 2rem 0;
+}
+
+.guide_arrow {
+  margin: 0 auto;
+  width: 5rem;
+}
+
+.contact_btn a {
+  margin: 5rem auto;
 }/*# sourceMappingURL=index.css.map */
