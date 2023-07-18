@@ -113,6 +113,26 @@ $border_radius: 0.5rem;
 .underline::after {
   margin-top: 3px;
 }
+
+.top_background{
+  height: 21rem;
+  width: 100%;
+  position: absolute;
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #D6AE7B 100%));
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.top_title{
+  color: white;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.common_merge{
+  margin: 5rem 0;
+}
 // 共通部品
 
 main{
@@ -443,3 +463,67 @@ main{
     }
   }
 }
+
+// event
+.event_list{
+  height: 55rem;
+  margin-top: 4rem;
+  background: white;
+  padding: 2.3rem 3.5rem;
+  .event_part{
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 2rem;
+    .envent_part_top{
+      display: flex;
+      margin-bottom: 1rem;
+      p:nth-child(1){
+        color: #838383;
+        line-height: 2.6rem;
+      }
+      p:nth-child(2){
+        padding: 0.3rem 3rem;
+        margin-left: 2rem;
+        border-radius: 0.3rem;
+      }
+    }
+    .event_part_bottom{
+      padding-bottom: 2rem;
+      a{
+        display: block;
+        width: max-content;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+// event_detail
+.event_top_info h3{
+  font-size: 2.7rem;
+  color: #d6ae7b;
+  margin: 2rem 0 0.5rem 0;
+}
+.event_top_info p{
+  color: #5C5C5C;
+  margin-bottom: 1.5rem;
+}
+.event_bottom_body{
+  width: 65%;
+  p{
+    color: #5C5C5C;
+    margin: 2rem 0 0 0;
+  }
+}
+.event_btns{
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  margin-left: auto;
+  a:nth-child(2){
+    border-radius: 10rem 0.5rem 0.5rem 10rem;
+  }
+  a:nth-child(3){
+    border-radius: 0.5rem 10rem 10rem 0.5rem;
+  }
+}
+
