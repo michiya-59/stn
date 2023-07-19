@@ -61,6 +61,9 @@ $border_radius: 0.5rem;
 .beige{
   color: $beige;
 }
+.black{
+  color: $black;
+}
 .common_size16{
   font-size: 1.6rem;
 }
@@ -699,6 +702,62 @@ main{
     border: 1px solid $sapphire_color;
     .conditons_title{
       background: $sapphire_background;
+    }
+  }
+}
+
+
+// learn
+.learn_detail_list{
+  display: flex;
+  flex-wrap: wrap;
+  .learn_part{
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin: 0 3rem 5rem 0;
+    .learn_box{
+      background-image: url("../image/learn_background.png");
+      background-size: cover;
+      height: 24rem;
+      padding: 8.7rem 0;
+      margin-top: 1rem;
+      .learn_document_video{
+        display: flex;
+        flex-direction: column;
+        a{
+          display: block;
+          width: 40%;
+          background: $white;
+          padding: 0.6rem 0;
+          border-radius: 0.2rem;
+          margin: 0 auto;
+        }
+        a:nth-child(2){
+          margin: 1rem auto 0 auto;
+        }
+      }
+    }
+  }
+}
+.pagenation{
+  text-align: center;
+  margin-bottom: 4rem;
+  a{
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.5rem;
+  }
+}
+.other_category{
+  margin-bottom: 10rem;
+  .category_list{
+    color: $black;
+    font-weight: bold;
+    margin-top: 2rem;
+    .category_part{
+      padding: 0.5rem 3rem;
+      margin-right: 1.5rem;
+      border: 1px solid $black;
     }
   }
 }
