@@ -625,4 +625,90 @@ main {
   width: 62.2%;
   padding: 1rem;
   text-align: right;
+}
+
+.my_title {
+  display: flex;
+}
+.my_title .my_title_left {
+  margin-right: 7rem;
+}
+.my_title .my_title_left .my_title_batch {
+  border-radius: 0.5rem;
+  background: var(--unnamed, linear-gradient(90deg, #4CA1AF 0%, #C4E0E5 100%));
+  display: flex;
+  width: 31rem;
+  padding: 1.7rem;
+  color: white;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.my_title .my_title_left .my_title_batch .title_card {
+  width: 3.5rem;
+  margin-right: 2rem;
+}
+.my_title .my_title_right {
+  border: 1px solid #da2131;
+  padding: 2.5rem 4rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 2.7rem;
+}
+.my_title .my_title_right .next_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.my_title .my_title_right .next_title span {
+  background: var(--unnamed, linear-gradient(90deg, #D41429 0%, #F34952 37.5%, #F5686C 52.6%, #F34952 67.19%, #D41429 100%));
+  color: white;
+  padding: 1rem 2rem;
+  display: block;
+  margin-right: 0.5rem;
+}
+.my_title .my_title_right .to_next_title {
+  text-align: left;
+  line-height: 3rem;
+}
+
+.my_number_step {
+  margin-top: 1rem;
+}
+.my_number_step p {
+  margin-bottom: 0.6rem;
+}
+
+.title_conditions_list {
+  margin-top: 2rem;
+  display: flex;
+}
+.title_conditions_list .conditions_part {
+  margin-right: 3rem;
+}
+.title_conditions_list .conditions_part .conditons_title {
+  color: white;
+  padding: 1rem 5.5rem;
+}
+.title_conditions_list .conditions_part .conditons_body {
+  text-align: center;
+  padding: 1rem 5rem;
+}
+.title_conditions_list .conditions_part:nth-child(1) {
+  border: 1px solid #65adba;
+}
+.title_conditions_list .conditions_part:nth-child(1) .conditons_title {
+  background: var(--unnamed, linear-gradient(90deg, #4CA1AF 0%, #C4E0E5 100%));
+}
+.title_conditions_list .conditions_part:nth-child(2) {
+  border: 1px solid #da2131;
+}
+.title_conditions_list .conditions_part:nth-child(2) .conditons_title {
+  background: var(--unnamed, linear-gradient(90deg, #D41429 0%, #F34952 37.5%, #F5686C 52.6%, #F34952 67.19%, #D41429 100%));
+}
+.title_conditions_list .conditions_part:nth-child(3) {
+  border: 1px solid #12b77f;
+}
+.title_conditions_list .conditions_part:nth-child(3) .conditons_title {
+  background: var(--unnamed, linear-gradient(90deg, #00B379 0%, #47D3A6 37.5%, #78F5CD 52.6%, #47D3A6 67.19%, #00B379 100%));
 }/*# sourceMappingURL=index.css.map */
