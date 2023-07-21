@@ -35,6 +35,45 @@ a {
 a:hover{
   opacity: 0.6;
 }
+input{
+  border: 1px solid #AFAFAF;
+  border-radius: 0.3rem !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  thead{
+    background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
+    color: white;
+    padding: 1rem 4rem;
+    display: table-caption;
+    tr{
+      font-size: 1.8rem;
+    }
+  }
+  tbody{
+    display: flex;
+    flex-direction: column;
+    tr{
+      padding: 1rem 0;
+      display: table-cell;
+      font-size: 1.6rem;
+      border-bottom: 1px dotted #CDCDCD;
+      td:nth-child(1){
+        padding-right: 7rem;
+      }
+      td:nth-child(4){
+        padding-right: 2rem;
+      }
+    }
+  }
+}
+th, td {
+  width: 10%;
+  text-align: center;
+  padding: 8px;
+}
 
 .container {
   width: 100%;
@@ -348,9 +387,10 @@ main{
 
 .search select{
   padding: 0.5rem 1rem;
-  border: 1px solid #525252;
+  border: 1px solid #AFAFAF;
   font-size: 1.3rem;
   margin-right: 1rem;
+  border-radius: 0.3rem;
 }
 
 .search .search_btn{
@@ -758,6 +798,48 @@ main{
       padding: 0.5rem 3rem;
       margin-right: 1.5rem;
       border: 1px solid $black;
+    }
+  }
+}
+
+
+// introducer
+.introducer_container {
+  background: white;
+  padding: 2rem;
+  margin-top: 4rem;
+  .introducer_list_container{
+    margin-top: 3rem;
+  }
+}
+.introducer_list{
+  padding: 1rem 2rem;
+  .introducer_part{
+    color: #515151;
+    margin-bottom: 1rem;
+    label{
+      vertical-align: middle;
+      margin-right: 1rem;
+      font-weight: bold;
+      width: 13rem;
+      display: inline-block;
+    }
+  }
+  .search_form_btn{
+    display: flex;
+    justify-content: center;
+    border: 1px solid $beige;
+    padding: 0.4rem 0;
+    width: 43%;
+    color: $beige;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    .search_icon{
+      width: 2.3rem;
+      margin-right: 0.5rem;
+    }
+    p{
+      line-height: 2.4rem;
     }
   }
 }
