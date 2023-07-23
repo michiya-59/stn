@@ -226,6 +226,18 @@ th, td {
   padding: 0.5rem 2rem;
 }
 
+.edit_btn {
+  background: white;
+  line-height: 2.6rem;
+  margin-left: auto;
+  font-size: 1.6rem;
+  width: 6.4rem;
+}
+
+.not_border {
+  border-bottom: none;
+}
+
 main {
   min-height: 100vh;
 }
@@ -401,7 +413,20 @@ main {
   border-radius: 0.3rem;
 }
 
-.search .search_btn {
+.form_select select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #AFAFAF;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+}
+
+.form_select span {
+  font-size: 1.6rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search .search_btn, .edit_btn {
   width: 6.1rem;
   height: 3rem;
   border-radius: 2px;
@@ -759,6 +784,12 @@ main {
   background: var(--unnamed, linear-gradient(90deg, #00B379 0%, #47D3A6 37.5%, #78F5CD 52.6%, #47D3A6 67.19%, #00B379 100%));
 }
 
+.learn_container, .connect_service_container, .registration_container {
+  background: white;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
 .learn_detail_list {
   display: flex;
   flex-wrap: wrap;
@@ -854,4 +885,167 @@ main {
 }
 .introducer_list .search_form_btn p {
   line-height: 2.4rem;
+}
+
+.basic_information_title, .bisiness_information_title, .address_information_title, .bank_information_title {
+  display: flex;
+  padding: 0.9rem 1rem !important;
+}
+.basic_information_title p, .bisiness_information_title p, .address_information_title p, .bank_information_title p {
+  line-height: 3rem;
+}
+
+.registration_title_container {
+  display: flex;
+}
+.registration_title_container p {
+  line-height: 4rem;
+}
+.registration_title_container a {
+  margin-left: auto;
+  background: white;
+  font-weight: normal;
+}
+
+.step_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.step_container .rectangle_triangle_container {
+  width: 32%;
+  height: 9rem;
+  position: relative;
+}
+.step_container .rectangle_triangle_container .rectangle {
+  background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step_container .rectangle_triangle_container .rectangle .rectangle-content {
+  color: #fff;
+  z-index: 1;
+}
+.step_container .rectangle_triangle_container .triangle {
+  position: absolute;
+  margin-top: 10rem;
+  width: 4.9rem;
+  height: 9rem;
+  top: -10rem;
+  right: -4.9rem;
+  background: linear-gradient(to bottom left, transparent 50%, #d6ae7b 50%) no-repeat top left/100% 50%, linear-gradient(to top left, transparent 50%, #d6ae7b 50%) no-repeat bottom left/100% 50%;
+}
+.step_container .rectangle_triangle_container .triangle::before {
+  content: "";
+  border-right: 7.4rem solid white;
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: blanchedalmond;
+  top: 1.9rem;
+  left: -1rem;
+  transform: rotate(44deg);
+}
+.step_container .rectangle_triangle_container .triangle::after {
+  content: "";
+  border-right: 8rem solid white;
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: blanchedalmond;
+  top: 6.9rem;
+  left: -1.6rem;
+  transform: rotate(137deg);
+}
+.step_container .rectangle_triangle_container .step_white {
+  background: #F0F0F0 !important;
+}
+.step_container .rectangle_triangle_container .step_white .beige {
+  color: #d6ae7b !important;
+}
+.step_container .rectangle_triangle_container .triangle_white {
+  background: linear-gradient(to bottom left, transparent 50%, #F0F0F0 50%) no-repeat top left/100% 50%, linear-gradient(to top left, transparent 50%, #F0F0F0 50%) no-repeat bottom left/100% 50%;
+}
+.step_container .rectangle_triangle_container:nth-child(1) {
+  z-index: 4;
+}
+.step_container .rectangle_triangle_container:nth-child(2) {
+  z-index: 3;
+}
+
+.form_edit_title {
+  color: #8E8E8E;
+  font-weight: normal;
+  margin: 3rem 0 1.5rem 0;
+  border-bottom: 1px solid #d6ae7b;
+  padding-bottom: 1rem;
+}
+
+.form_part_title {
+  display: flex;
+}
+.form_part_title span {
+  background: #C33;
+  line-height: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0rem 0.6rem;
+  margin-left: 0.9rem;
+}
+
+.form_part_input {
+  padding: 1rem 1.5rem;
+}
+.form_part_input .input_text_form {
+  border: 1px solid #CCC;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.form_part_input p {
+  color: #888888;
+  margin-top: 0.6rem;
+}
+
+.gender_content {
+  display: flex;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.form_edit_part:nth-child(8) .form_part_input {
+  display: flex;
+}
+.form_edit_part:nth-child(8) .form_part_input .gender_content {
+  margin-right: 1rem;
+}
+
+.avatar {
+  border: none;
+}
+
+.submit_btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 5rem 0;
+}
+.submit_btn a {
+  width: 49%;
+}
+
+.form_part_input .not_merge {
+  margin: 0;
+}
+
+.avatar_image {
+  width: 30rem;
+  height: 30rem;
+}
+.avatar_image img {
+  height: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=index.css.map */
