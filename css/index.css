@@ -84,7 +84,6 @@ th, td {
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   max-width: 128rem;
   box-sizing: content-box;
@@ -97,6 +96,11 @@ th, td {
 
 .black {
   color: #5C5C5C;
+}
+
+.gray {
+  color: #888;
+  margin: 1rem 0;
 }
 
 .common_size16 {
@@ -133,6 +137,16 @@ th, td {
 
 .common_btn_beige_background {
   background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
+  color: white;
+}
+
+.common_btn_gray_background {
+  background: #D9D9D9;
+  color: white;
+}
+
+.common_btn_brawn_background {
+  background: #987138;
   color: white;
 }
 
@@ -417,7 +431,7 @@ main {
   border-radius: 0.3rem;
 }
 
-.form_select select {
+.form_select select, .deposit_type select, .contract_info select {
   padding: 0.5rem 1rem;
   border: 1px solid #AFAFAF;
   font-size: 1.3rem;
@@ -917,7 +931,7 @@ main {
   margin-top: 3rem;
 }
 .step_container .rectangle_triangle_container {
-  width: 32%;
+  width: 33.3%;
   height: 9rem;
   position: relative;
 }
@@ -1008,14 +1022,14 @@ main {
   border: 1px solid #CCC;
   font-size: 1.6rem;
   padding: 0.5rem 1rem;
-  width: 100%;
+  width: 30%;
 }
 .form_part_input p {
   color: #888888;
   margin-top: 0.6rem;
 }
 
-.gender_content {
+.gender_content, .two_thier_radio {
   display: flex;
   margin: 0;
   font-size: 1.6rem;
@@ -1155,4 +1169,81 @@ main {
 
 .back_login {
   margin: 5rem auto 0 auto;
+}
+
+.input_order {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.input_order_line {
+  position: absolute;
+  width: 100%;
+  height: 0.15rem;
+  background: #D9D9D9;
+  top: 3rem;
+  z-index: -1;
+}
+
+.basic_info p:nth-child(1), .address_info p:nth-child(1), .bank_info p:nth-child(1) {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.contract p:nth-child(1) {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.basic_info p:nth-child(2), .address_info p:nth-child(2), .bank_info p:nth-child(2), .contract p:nth-child(2) {
+  text-align: center;
+  color: #454545;
+  font-weight: bold;
+  margin-top: 0.7rem;
+}
+
+.zip_three, .zip_four {
+  border: 1px solid #CCC;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  width: 6rem;
+}
+
+.two_thier {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+}
+.two_thier .sales_info_text {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.two_thier_radio {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.two_thier_radio .a_san_flg {
+  margin-right: 0.5rem;
+}
+
+.entry_btn_finish {
+  border: none;
+  width: 100%;
+  height: 6rem;
 }/*# sourceMappingURL=index.css.map */
