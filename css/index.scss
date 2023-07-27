@@ -35,9 +35,45 @@ a {
 a:hover{
   opacity: 0.6;
 }
-input{
+input, textarea{
   border: 1px solid #AFAFAF;
   border-radius: 0.3rem !important;
+}
+textarea{
+  padding: 1rem 2rem !important;
+}
+.w6{
+  width: 6%;
+}
+.w10{
+  width: 10%;
+}
+.w11{
+  width: 11%;
+}
+.w15{
+  width: 15%;
+}
+.w20{
+  width: 20%;
+}
+.w21{
+  width: 21%;
+}
+.w31{
+  width: 31%;
+}
+.w33{
+  width: 33%;
+}
+.w39{
+  width: 39%;
+}
+.w41{
+  width: 41%;
+}
+.w69{
+  width: 69%;
 }
 
 table {
@@ -223,7 +259,7 @@ $border_radius: 0.5rem;
     padding: 0.5rem 2rem;
   }
 }
-.edit_btn{
+.edit_btn, .add_btn, .back_btn{
   background: white;
   line-height: 2.6rem;
   margin-left: auto;
@@ -235,6 +271,17 @@ $border_radius: 0.5rem;
 }
 .text_center{
   text-align: center;
+}
+.admin_submit_btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 5rem 0;
+  a, input{
+    width: 49%;
+    border-radius: 0.3rem;
+    padding: 1rem 0;
+    height: 100%;
+  }
 }
 // 共通部品
 
@@ -417,7 +464,7 @@ main{
   margin-right: 1rem;
   border-radius: 0.3rem;
 }
-.form_select select, .deposit_type select, .contract_info select{
+.form_select select, .deposit_type select, .contract_info select, .admin_event_form_part select{
   padding: 0.5rem 1rem;
   border: 1px solid #AFAFAF;
   font-size: 1.3rem;
@@ -428,15 +475,13 @@ main{
   display: inline-block;
   vertical-align: middle;
 }
-
 .search .search_btn, .edit_btn{
   width: 6.1rem;
   height: 3rem;
   border-radius: 2px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
-
 .reservation_list{
   margin: 1.5rem 0 10rem 0;
   .reservation_part{
@@ -1017,7 +1062,7 @@ main{
     margin-right: 1rem;
   }
 }
-.avatar{
+.avatar, .event_image, .document_file, .video_file{
   border: none;
 }
 .submit_btn{
@@ -1045,6 +1090,9 @@ main{
   width: 44.5rem;
   margin: 0 auto;
   margin-top: 6rem;
+  @include mobile.mobile_media{
+    margin-top: 30rem;
+  }
 }
 .login_form{
   margin-top: 4.2rem;
@@ -1120,6 +1168,20 @@ main{
 }
 .custom-shape-divider-bottom-1690091883 .shape-fill {
   fill: #d6ae7b;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30rem;
+  @include mobile.mobile_media{
+    img{
+      height: 100%;
+    }
+  }
+}
+.wave svg {
+  height: 100%;
 }
 
 // password_reset
@@ -1214,4 +1276,143 @@ main{
   border: none;
   width: 100%;
   height: 6rem;
+}
+
+//admin
+.admin_lsit{
+  display: flex;
+  flex-wrap: wrap;
+  a{
+    width: 20rem;
+    height: 9rem;
+    line-height: 9rem;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-right: 3.2rem;
+  }
+  a:nth-child(3){
+    line-height: normal;
+    padding-top: 1.5rem;
+  }
+}
+// admin_seminar
+.seminar_add_part{
+  display: flex;
+  margin-bottom: 1rem;
+  p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    width: 9rem;
+  }
+  .form_time input{
+    height: 3rem;
+    padding: 0 2rem;
+  }
+  input{
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+  }
+}
+.admin_add_btn{
+  width: 34rem;
+}
+.admin_seminar_content, .admin_learn_content{
+  margin-top: 5rem;
+  .common_admin_list{
+    margin: 3rem 0 5rem 0;
+    .common_list_head{
+      display: flex;
+      border-bottom: 0.1rem solid #dab483;
+      padding-bottom: 0.5rem;
+    }
+    .common_list_body .common_list_body_part{
+      border-bottom: 1px dotted #CDCDCD;
+      display: flex;
+      line-height: 3rem;
+      padding: 1rem;
+    }
+  }
+}
+
+.admin_event_btns{
+  display: flex;
+  a{
+    margin-left: auto;
+  }
+}
+.admin_event_form_part, .admin_bonus_form_part, .learn_add_categeory_part, .learn_add_part, .learn_edit_part{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  label{
+    margin-bottom: 1rem;
+    span{
+      background: #C33;
+      border-radius: 0.5rem;
+      padding: 0.3rem 1rem;
+      margin-left: 0.9rem;
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
+  select{
+    width: 20rem;
+  }
+  .text_box{
+    height: 3rem;
+    padding: 0 2rem;
+    height: 4rem;
+  }
+  .course_name{
+    width: 40rem;
+  }
+  .bonus_price{
+    width: 15rem;
+    margin-right: 1rem;
+  }
+}
+.admin_bonus_form_part div{
+  display: flex;
+  span{
+    line-height: 4rem;
+  }
+}
+
+.learn_add_categeory_part{
+  margin-bottom: 1rem;
+  label{
+    margin-bottom: 0.5rem;
+  }
+  input{
+    width: 34rem;
+    height: 4rem;
+    padding: 0.5rem 1rem;
+  }
+
+}
+.learn_edit_part, .learn_add_part{
+  margin-bottom: 1rem;
+  label{
+    margin-bottom: 0.5rem;
+  }
+  input{
+    width: 34rem;
+    padding: 0.5rem 1rem;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .document_file, .video_file{
+    padding: 0;
+  }
+}
+.learn_edit_part:nth-child(3), .learn_add_part:nth-child(3){
+  margin-bottom: 3rem;
+}
+.admin_category_list{
+  display: flex;
+  a{
+    margin-right: 2rem;
+  }
 }

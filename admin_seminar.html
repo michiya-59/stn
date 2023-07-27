@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/destyle.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/00e4001a9c.js" crossorigin="anonymous"></script>
+  <title>STN会員サイト トップ画面</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header_left">
+        <a href="index.html">
+          <img src="image/logo.png">
+        </a>
+      </div>
+      <div class="header_right">
+        <ul>
+          <li><a href="#">セミナー予約</a></li>
+          <li><a href="#">組織図</a></li>
+          <li><a href="#">イベント情報</a></li>
+          <li><a href="#">連絡先</a></li>
+          <li><a href="#">ボーナス情報</a></li>
+          <li><a href="#">タイトル</a></li>
+          <li><a href="#">学びの資料</a></li>
+          <li><a href="#">紹介者一覧</a></li>
+          <li><a href="#">登録情報</a></li>
+          <li><a href="admin.html">管理者画面</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <p class="pankuzu">
+        <a href="index.html" class="common_a">トップページ</a>
+        >
+        <a href="admin.html" class="common_a">管理画面</a>
+        >
+        セミナー情報
+      </p>
+      <div class="admin_seminar_add_contant">
+        <div class="common_field_title">
+          <h1>セミナー登録</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="admin_seminar_add">
+          <form action="">
+            <div class="seminar_add_part">
+              <p>日程：</p>
+              <div class="form_select">
+                <select name="year">
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                </select>
+                <span>年</span>
+                <select name="month">
+                  <option value="01">1</option>
+                  <option value="02">2</option>
+                  <option value="03">3</option>
+                  <option value="04">4</option>
+                  <option value="05">5</option>
+                  <option value="06">6</option>
+                  <option value="07">7</option>
+                  <option value="08">8</option>
+                  <option value="09">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <span>月</span>
+                <select name="day">
+                  <option value="01">1</option>
+                  <option value="02">2</option>
+                  <option value="03">3</option>
+                </select>
+                <span>日</span>
+              </div>
+            </div>
+            <div class="seminar_add_part">
+              <p>時間：</p>
+              <div class="form_time">
+                <input type="time" id="start_time" name="start_time">　〜　<input type="time" id="end_time" name="end_time"><br>
+              </div>
+            </div>
+            <div class="seminar_add_part">
+              <p>タイトル：</p>
+              <input type="text" name="seminar_title" id="seminar_title">
+            </div>
+            <div class="seminar_add_part">
+              <p>講師：</p>
+              <input type="text" name="teacher" id="teacher">
+            </div>
+            <input type="submit" class="admin_add_btn common_btn_beige common_btn_content common_box_beige" value="新規追加">
+          </form>
+        </div>
+      </div>
+      <div class="admin_seminar_content">
+        <div class="common_field_title">
+          <h1>セミナー登録一覧</h1>
+          <div class="underline"></div>
+        </div>
+        <form class="search">
+          <select name="year_month">
+            <option value="2023_01">2023年1月度</option>
+            <option value="2023_02">2023年2月度</option>
+            <option value="2023_03">2023年3月度</option>
+            <option value="2023_04">2023年4月度</option>
+            <option value="2023_05">2023年5月度</option>
+            <option value="2023_06">2023年6月度</option>
+            <option value="2023_07">2023年7月度</option>
+            <option value="2023_08">2023年8月度</option>
+            <option value="2023_09">2023年9月度</option>
+            <option value="2023_10">2023年10月度</option>
+            <option value="2023_11">2023年11月度</option>
+            <option value="2023_12">2023年12月度</option>
+          </select>
+          <input type="submit" value="検索" class="search_btn common_box_beige">
+        </form>
+        <div class="common_admin_list">
+          <div class="common_list_head">
+            <p class="w6"></p>
+            <p class="w31 common_size16">日時</p>
+            <p class="w39 common_size16">タイトル</p>
+            <p class="w20 common_size16">講師</p>
+          </div>
+          <div class="common_list_body">
+            <div class="common_list_body_part">
+              <p class="w6 common_size16">１.</p>
+              <p class="w33 common_size16">2023/06/23 19:00 ~ 22:00</p>
+              <p class="w41 common_size16">BOトレ</p>
+              <p class="w20 common_size16">鈴木誠也</p>
+              <a href="admin_seminar_edit.html" class="edit_btn common_box_beige">編集</a>
+            </div>
+          </div>
+          <div class="common_list_body">
+            <div class="common_list_body_part">
+              <p class="w6 common_size16">２.</p>
+              <p class="w33 common_size16">2023/06/23 19:00 ~ 22:00</p>
+              <p class="w41 common_size16">BOトレ</p>
+              <p class="w20 common_size16">鈴木誠也</p>
+              <a href="admin_seminar_edit.html" class="edit_btn common_box_beige">編集</a>
+            </div>
+          </div>
+          <div class="common_list_body">
+            <div class="common_list_body_part">
+              <p class="w6 common_size16">３.</p>
+              <p class="w33 common_size16">2023/06/23 19:00 ~ 22:00</p>
+              <p class="w41 common_size16">BOトレ</p>
+              <p class="w20 common_size16">鈴木誠也</p>
+              <a href="admin_seminar_edit.html" class="edit_btn common_box_beige">編集</a>
+            </div>
+          </div>
+          <div class="common_list_body">
+            <div class="common_list_body_part">
+              <p class="w6 common_size16">４.</p>
+              <p class="w33 common_size16">2023/06/23 19:00 ~ 22:00</p>
+              <p class="w41 common_size16">BOトレ</p>
+              <p class="w20 common_size16">鈴木誠也</p>
+              <a href="admin_seminar_edit.html" class="edit_btn common_box_beige">編集</a>
+            </div>
+          </div>
+          <div class="common_list_body">
+            <div class="common_list_body_part">
+              <p class="w6 common_size16">５.</p>
+              <p class="w33 common_size16">2023/06/23 19:00 ~ 22:00</p>
+              <p class="w41 common_size16">BOトレ</p>
+              <p class="w20 common_size16">鈴木誠也</p>
+              <a href="admin_seminar_edit.html" class="edit_btn common_box_beige">編集</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="admin.html" class="common_btn_beige common_btn_beige_background common_btn_content common_merge">戻る</a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>copyright©️ STN All Right Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

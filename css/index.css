@@ -42,9 +42,57 @@ a:hover {
   opacity: 0.6;
 }
 
-input {
+input, textarea {
   border: 1px solid #AFAFAF;
   border-radius: 0.3rem !important;
+}
+
+textarea {
+  padding: 1rem 2rem !important;
+}
+
+.w6 {
+  width: 6%;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w11 {
+  width: 11%;
+}
+
+.w15 {
+  width: 15%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w21 {
+  width: 21%;
+}
+
+.w31 {
+  width: 31%;
+}
+
+.w33 {
+  width: 33%;
+}
+
+.w39 {
+  width: 39%;
+}
+
+.w41 {
+  width: 41%;
+}
+
+.w69 {
+  width: 69%;
 }
 
 table {
@@ -240,7 +288,7 @@ th, td {
   padding: 0.5rem 2rem;
 }
 
-.edit_btn {
+.edit_btn, .add_btn, .back_btn {
   background: white;
   line-height: 2.6rem;
   margin-left: auto;
@@ -254,6 +302,18 @@ th, td {
 
 .text_center {
   text-align: center;
+}
+
+.admin_submit_btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 5rem 0;
+}
+.admin_submit_btn a, .admin_submit_btn input {
+  width: 49%;
+  border-radius: 0.3rem;
+  padding: 1rem 0;
+  height: 100%;
 }
 
 main {
@@ -431,7 +491,7 @@ main {
   border-radius: 0.3rem;
 }
 
-.form_select select, .deposit_type select, .contract_info select {
+.form_select select, .deposit_type select, .contract_info select, .admin_event_form_part select {
   padding: 0.5rem 1rem;
   border: 1px solid #AFAFAF;
   font-size: 1.3rem;
@@ -449,7 +509,7 @@ main {
   height: 3rem;
   border-radius: 2px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .reservation_list {
@@ -1042,7 +1102,7 @@ main {
   margin-right: 1rem;
 }
 
-.avatar {
+.avatar, .event_image, .document_file, .video_file {
   border: none;
 }
 
@@ -1072,6 +1132,11 @@ main {
   width: 44.5rem;
   margin: 0 auto;
   margin-top: 6rem;
+}
+@media screen and (max-width: 767px) {
+  .login_icon {
+    margin-top: 30rem;
+  }
 }
 
 .login_form {
@@ -1153,6 +1218,22 @@ main {
 
 .custom-shape-divider-bottom-1690091883 .shape-fill {
   fill: #d6ae7b;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30rem;
+}
+@media screen and (max-width: 767px) {
+  .wave img {
+    height: 100%;
+  }
+}
+
+.wave svg {
+  height: 100%;
 }
 
 .mail_send_title {
@@ -1246,4 +1327,148 @@ main {
   border: none;
   width: 100%;
   height: 6rem;
+}
+
+.admin_lsit {
+  display: flex;
+  flex-wrap: wrap;
+}
+.admin_lsit a {
+  width: 20rem;
+  height: 9rem;
+  line-height: 9rem;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-right: 3.2rem;
+}
+.admin_lsit a:nth-child(3) {
+  line-height: normal;
+  padding-top: 1.5rem;
+}
+
+.seminar_add_part {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.seminar_add_part p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  width: 9rem;
+}
+.seminar_add_part .form_time input {
+  height: 3rem;
+  padding: 0 2rem;
+}
+.seminar_add_part input {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+}
+
+.admin_add_btn {
+  width: 34rem;
+}
+
+.admin_seminar_content, .admin_learn_content {
+  margin-top: 5rem;
+}
+.admin_seminar_content .common_admin_list, .admin_learn_content .common_admin_list {
+  margin: 3rem 0 5rem 0;
+}
+.admin_seminar_content .common_admin_list .common_list_head, .admin_learn_content .common_admin_list .common_list_head {
+  display: flex;
+  border-bottom: 0.1rem solid #dab483;
+  padding-bottom: 0.5rem;
+}
+.admin_seminar_content .common_admin_list .common_list_body .common_list_body_part, .admin_learn_content .common_admin_list .common_list_body .common_list_body_part {
+  border-bottom: 1px dotted #CDCDCD;
+  display: flex;
+  line-height: 3rem;
+  padding: 1rem;
+}
+
+.admin_event_btns {
+  display: flex;
+}
+.admin_event_btns a {
+  margin-left: auto;
+}
+
+.admin_event_form_part, .admin_bonus_form_part, .learn_add_categeory_part, .learn_add_part, .learn_edit_part {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.admin_event_form_part label, .admin_bonus_form_part label, .learn_add_categeory_part label, .learn_add_part label, .learn_edit_part label {
+  margin-bottom: 1rem;
+}
+.admin_event_form_part label span, .admin_bonus_form_part label span, .learn_add_categeory_part label span, .learn_add_part label span, .learn_edit_part label span {
+  background: #C33;
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+  margin-left: 0.9rem;
+  color: white;
+  font-size: 1.3rem;
+}
+.admin_event_form_part select, .admin_bonus_form_part select, .learn_add_categeory_part select, .learn_add_part select, .learn_edit_part select {
+  width: 20rem;
+}
+.admin_event_form_part .text_box, .admin_bonus_form_part .text_box, .learn_add_categeory_part .text_box, .learn_add_part .text_box, .learn_edit_part .text_box {
+  height: 3rem;
+  padding: 0 2rem;
+  height: 4rem;
+}
+.admin_event_form_part .course_name, .admin_bonus_form_part .course_name, .learn_add_categeory_part .course_name, .learn_add_part .course_name, .learn_edit_part .course_name {
+  width: 40rem;
+}
+.admin_event_form_part .bonus_price, .admin_bonus_form_part .bonus_price, .learn_add_categeory_part .bonus_price, .learn_add_part .bonus_price, .learn_edit_part .bonus_price {
+  width: 15rem;
+  margin-right: 1rem;
+}
+
+.admin_bonus_form_part div {
+  display: flex;
+}
+.admin_bonus_form_part div span {
+  line-height: 4rem;
+}
+
+.learn_add_categeory_part {
+  margin-bottom: 1rem;
+}
+.learn_add_categeory_part label {
+  margin-bottom: 0.5rem;
+}
+.learn_add_categeory_part input {
+  width: 34rem;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+}
+
+.learn_edit_part, .learn_add_part {
+  margin-bottom: 1rem;
+}
+.learn_edit_part label, .learn_add_part label {
+  margin-bottom: 0.5rem;
+}
+.learn_edit_part input, .learn_add_part input {
+  width: 34rem;
+  padding: 0.5rem 1rem;
+}
+.learn_edit_part p, .learn_add_part p {
+  margin-bottom: 0;
+}
+.learn_edit_part .document_file, .learn_edit_part .video_file, .learn_add_part .document_file, .learn_add_part .video_file {
+  padding: 0;
+}
+
+.learn_edit_part:nth-child(3), .learn_add_part:nth-child(3) {
+  margin-bottom: 3rem;
+}
+
+.admin_category_list {
+  display: flex;
+}
+.admin_category_list a {
+  margin-right: 2rem;
 }/*# sourceMappingURL=index.css.map */
