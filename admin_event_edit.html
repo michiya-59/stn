@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/destyle.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/00e4001a9c.js" crossorigin="anonymous"></script>
+  <title>STN会員サイト トップ画面</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header_left">
+        <a href="index.html">
+          <img src="image/logo.png">
+        </a>
+      </div>
+      <div class="header_right">
+        <ul>
+          <li><a href="#">セミナー予約</a></li>
+          <li><a href="#">組織図</a></li>
+          <li><a href="#">イベント情報</a></li>
+          <li><a href="#">連絡先</a></li>
+          <li><a href="#">ボーナス情報</a></li>
+          <li><a href="#">タイトル</a></li>
+          <li><a href="#">学びの資料</a></li>
+          <li><a href="#">紹介者一覧</a></li>
+          <li><a href="#">登録情報</a></li>
+          <li><a href="admin.html">管理者画面</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <p class="pankuzu">
+        <a href="index.html" class="common_a">トップページ</a>
+        >
+        <a href="admin.html" class="common_a">管理画面</a>
+        >
+        <a href="admin_event.html" class="common_a">イベント情報</a>
+        >
+        イベント情報 編集
+      </p>
+      <div class="common_field_title">
+        <h1>イベント・お知らせ情報 編集</h1>
+        <div class="underline"></div>
+      </div>
+      <form action="">
+        <div class="admin_event_form_part">
+          <label for="evenet_title" class="common_size16">タイトル<span>必須</span></label>
+          <input type="text" name="event_title" id="event_title" class="text_box common_size16" value="会員サイトに新しい機能を追加しました">
+          <p class="gray common_size13">※35文字以内で入力してください。</p>
+        </div>
+        <div class="admin_event_form_part">
+          <label for="evenet_area" class="common_size16">内容<span>必須</span></label>
+          <textarea name="event_area" id="event_area" rows="30" class="common_size16">会員サイトに新しい機能を追加しました。本日より、当社の会員サイトに新機能「ポイント還元機能」が追加されました。商品購入時にポイントが付与され、次回購入時に使用可能となります。より一層のサービス向上を目指し、会員の皆様にとって便利でお得なサイトとなるよう、引き続き改善してまいります。ご利用、心よりお待ちしております。</textarea>
+        </div>
+        <div class="admin_event_form_part">
+          <label for="event_category" class="common_size16">カテゴリー<span>必須</span></label>
+          <select name="category">
+            <option value="event">イベント</option>
+            <option value="notice">お知らせ</option>
+          </select>
+        </div>
+        <div class="admin_event_form_part">
+          <label for="image" class="common_size16">写真</label>
+          <input type="file" id="event_image" name="event_image" class="common_size13 event_image" accept="image/png, image/jpeg, image/svg, image/jpg, image/webp">
+        </div>
+        <div class="admin_submit_btn text_center common_merge">
+          <a href="admin_event.html" class="back_btn common_box_beige">戻る</a>
+          <input type="submit" class="add_btn common_box_beige" value="新規追加">
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>copyright©️ STN All Right Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
