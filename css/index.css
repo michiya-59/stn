@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -6,7 +7,7 @@ html {
     font-size: 50%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 600) {
   html {
     font-size: 40%;
   }
@@ -45,6 +46,7 @@ a:hover {
 input, textarea {
   border: 1px solid #AFAFAF;
   border-radius: 0.3rem !important;
+  padding: 0.3rem;
 }
 
 textarea {
@@ -93,6 +95,15 @@ textarea {
 
 .w69 {
   width: 69%;
+}
+
+.display_moble {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .display_moble {
+    display: none;
+  }
 }
 
 table {
@@ -154,6 +165,11 @@ th, td {
 .common_size16 {
   font-size: 1.6rem;
 }
+@media screen and (max-width: 767px) {
+  .common_size16 {
+    font-size: 2rem;
+  }
+}
 
 .common_size20 {
   font-size: 2rem;
@@ -163,9 +179,19 @@ th, td {
 .common_size13 {
   font-size: 1.3rem;
 }
+@media screen and (max-width: 767px) {
+  .common_size13 {
+    font-size: 1.7rem;
+  }
+}
 
 .common_size18 {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 767px) {
+  .common_size18 {
+    font-size: 2.2rem;
+  }
 }
 
 .common_a {
@@ -208,6 +234,13 @@ th, td {
   text-align: center;
   line-height: 3.8rem;
 }
+@media screen and (max-width: 767px) {
+  .common_btn_content {
+    width: 23rem;
+    height: 6rem;
+    line-height: 6rem;
+  }
+}
 
 .common_field_title {
   margin-bottom: 2rem;
@@ -217,6 +250,11 @@ th, td {
   text-align: center;
   color: #5C5C5C;
   margin-bottom: 1.3rem;
+}
+@media screen and (max-width: 767px) {
+  .common_field_title h1 {
+    font-size: 3rem;
+  }
 }
 
 .common_box_beige {
@@ -279,6 +317,14 @@ th, td {
   font-weight: bold;
   color: #5C5C5C;
 }
+@media screen and (max-width: 767px) {
+  .common_list_part {
+    padding: 2rem 1.5rem;
+  }
+  .common_list_part p:nth-child(1) {
+    width: 50%;
+  }
+}
 
 .detail_btn {
   margin-left: auto;
@@ -287,6 +333,11 @@ th, td {
   border-radius: 0.3rem;
   padding: 0.5rem 2rem;
 }
+@media screen and (max-width: 767px) {
+  .detail_btn a {
+    padding: 1rem 5rem;
+  }
+}
 
 .edit_btn, .add_btn, .back_btn {
   background: white;
@@ -294,6 +345,11 @@ th, td {
   margin-left: auto;
   font-size: 1.6rem;
   width: 6.4rem;
+}
+@media screen and (max-width: 767px) {
+  .edit_btn, .add_btn, .back_btn {
+    line-height: 3.5rem;
+  }
 }
 
 .not_border {
@@ -334,6 +390,11 @@ main {
   width: 11%;
   margin-left: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .header .header_left {
+    width: 22%;
+  }
+}
 .header .header_left img {
   height: 100%;
   object-fit: contain;
@@ -343,6 +404,11 @@ main {
   align-items: center;
   margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  .header .header_right {
+    display: none;
+  }
+}
 .header .header_right ul {
   display: flex;
   color: #666666;
@@ -350,6 +416,16 @@ main {
 .header .header_right ul li {
   font-size: 1.6rem;
   margin-right: 2.5rem;
+}
+.header .header_right_mobile {
+  display: none;
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .header .header_right_mobile {
+    display: block;
+    margin-right: 2rem;
+  }
 }
 
 .profile {
@@ -361,12 +437,24 @@ main {
   position: relative;
   margin-top: 9rem;
 }
+@media screen and (max-width: 767px) {
+  .profile {
+    width: 100%;
+    height: 16.7rem;
+  }
+}
 .profile .profile_self_image {
   width: 12.7rem;
   height: 12.5rem;
   position: absolute;
   top: -6.5rem;
   left: 19.2rem;
+}
+@media screen and (max-width: 767px) {
+  .profile .profile_self_image {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .profile .profile_self_image img {
   height: 100%;
@@ -377,6 +465,11 @@ main {
   display: flex;
   padding: 7.5rem 4.5rem 0 4.5rem;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 767px) {
+  .profile .profile_info {
+    padding-right: 0.5rem;
+  }
 }
 .profile .profile_info .profile_info_details {
   display: flex;
@@ -412,6 +505,12 @@ main {
   display: block;
   width: 37.5rem;
 }
+@media screen and (max-width: 767px) {
+  .uranai_link {
+    width: 100%;
+    height: 8rem;
+  }
+}
 .uranai_link .uranai {
   height: 6.2rem;
   border-radius: 10px;
@@ -421,6 +520,12 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .uranai_link .uranai {
+    height: 100%;
+    margin-top: 2rem;
+  }
 }
 .uranai_link .uranai .uranai_icon {
   width: 3rem;
@@ -435,6 +540,19 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .menu_list {
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+  .menu_list a {
+    width: 49%;
+  }
+  .menu_list a .menu_part {
+    width: 100%;
+    height: 11rem;
+  }
 }
 .menu_list .menu_part {
   width: 20.5rem;
@@ -471,6 +589,12 @@ main {
   margin: 1.6rem 0;
   color: #5C5C5C;
 }
+@media screen and (max-width: 767px) {
+  .pankuzu {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+  }
+}
 
 .reservation_switch_btn {
   display: flex;
@@ -481,6 +605,17 @@ main {
 .reservation_switch_btn a:nth-child(1) {
   color: #EACDA3;
   background: linear-gradient(90deg, rgba(234, 205, 163, 0.16) 0%, rgba(214, 174, 123, 0.16) 100%);
+}
+@media screen and (max-width: 767px) {
+  .reservation_switch_btn {
+    width: 100%;
+    margin: 3rem 0;
+  }
+  .reservation_switch_btn a {
+    width: 49%;
+    height: 5rem;
+    line-height: 5rem;
+  }
 }
 
 .search select {
@@ -511,6 +646,12 @@ main {
   text-align: center;
   font-size: 1.6rem;
 }
+@media screen and (max-width: 767px) {
+  .search .search_btn, .edit_btn {
+    width: 11rem;
+    height: 4rem;
+  }
+}
 
 .reservation_list {
   margin: 1.5rem 0 10rem 0;
@@ -521,15 +662,37 @@ main {
   width: 40%;
   padding: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .reservation_list .reservation_part {
+    width: 100%;
+    height: 14rem;
+  }
+}
 .reservation_list .reservation_part .reservation_left {
   color: #5C5C5C;
   margin-right: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .reservation_list .reservation_part .reservation_left {
+    text-align: center;
+    padding-top: 2.2rem;
+    width: 20%;
+  }
+  .reservation_list .reservation_part .reservation_left p {
+    text-align: center;
+  }
 }
 .reservation_list .reservation_part .reservation_right {
   width: 40rem;
   height: 8.5rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .reservation_list .reservation_part .reservation_right {
+    height: auto;
+    width: 80%;
+  }
 }
 .reservation_list .reservation_part .reservation_right .reservation_info_top {
   display: flex;
@@ -551,10 +714,20 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn {
+    height: 4rem;
+  }
+}
 .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn .reservation_calender {
   width: 2rem;
   height: 2rem;
   margin-right: 0.3rem;
+}
+@media screen and (max-width: 768px) {
+  .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn .reservation_calender img {
+    vertical-align: baseline;
+  }
 }
 .reservation_list .reservation_part .reservation_right .reservation_info_bottom {
   display: flex;
@@ -570,11 +743,21 @@ main {
   text-align: center;
   line-height: 2.5rem;
 }
+@media screen and (max-width: 767px) {
+  .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_left p {
+    line-height: 3rem;
+  }
+}
 .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_right {
   width: 70%;
   font-size: 1.4rem;
   line-height: 2.7rem;
   padding-left: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_right p {
+    line-height: 3.5rem;
+  }
 }
 
 .confirm_text {
@@ -583,11 +766,16 @@ main {
   color: #5C5C5C;
 }
 
-.reservation_confirm_container {
+.reservation_confirm_container, .reservation_cancel_container {
   width: 50.4rem;
 }
-.reservation_confirm_container .confirm_info {
+.reservation_confirm_container .confirm_info, .reservation_cancel_container .confirm_info {
   color: #5C5C5C;
+}
+@media screen and (max-width: 767px) {
+  .reservation_confirm_container, .reservation_cancel_container {
+    width: 100%;
+  }
 }
 
 .reservation_confirm_switch_btn {
@@ -600,6 +788,14 @@ main {
   background: var(--unnamed, linear-gradient(90deg, #EACDA3 0%, #d6ae7b 100%));
   color: white;
 }
+@media screen and (max-width: 767px) {
+  .reservation_confirm_switch_btn {
+    width: 77%;
+  }
+  .reservation_confirm_switch_btn a {
+    width: 48%;
+  }
+}
 
 .reservation_status_list {
   margin: 3rem 0 10rem 0;
@@ -611,6 +807,11 @@ main {
   padding: 1rem;
   color: #5C5C5C;
 }
+@media screen and (max-width: 767px) {
+  .reservation_status_list .reservation_status_part {
+    width: 100%;
+  }
+}
 .reservation_status_list .reservation_status_part .reservation_status_top {
   display: flex;
   margin-bottom: 2rem;
@@ -620,10 +821,24 @@ main {
   padding: 0.4rem 2.3rem;
   margin-right: 1rem;
 }
+@media screen and (max-width: 767px) {
+  .reservation_status_list .reservation_status_part .reservation_status_top p:nth-child(1) {
+    width: 13rem;
+    text-align: center;
+    height: 4rem;
+    line-height: 3rem;
+  }
+}
 .reservation_status_list .reservation_status_part .reservation_status_top p:nth-child(2) {
   font-size: 1.7rem;
   font-weight: bold;
   line-height: 2.8rem;
+}
+@media screen and (max-width: 767px) {
+  .reservation_status_list .reservation_status_part .reservation_status_top p:nth-child(2) {
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
 }
 .reservation_status_list .reservation_status_part .reservation_status_bottom {
   display: flex;
@@ -636,9 +851,21 @@ main {
   line-height: 3.3rem;
   margin-left: auto;
 }
+@media screen and (max-width: 767px) {
+  .reservation_status_list .reservation_status_part .reservation_status_bottom .cancel_btn {
+    width: 17rem;
+    line-height: 4.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reservation_status_list .reservation_status_part .reservation_status_bottom .reservation_info p {
+    font-size: 2.3rem;
+  }
+}
 
 .event_list {
-  height: 55rem;
+  height: auto;
+  min-height: 55rem;
   margin-top: 4rem;
   background: white;
   padding: 2.3rem 3.5rem;
@@ -683,6 +910,11 @@ main {
 .event_bottom_body {
   width: 65%;
 }
+@media screen and (max-width: 767px) {
+  .event_bottom_body {
+    width: 100%;
+  }
+}
 .event_bottom_body p {
   color: #5C5C5C;
   margin: 2rem 0 0 0;
@@ -700,15 +932,42 @@ main {
 .event_btns a:nth-child(3) {
   border-radius: 0.5rem 10rem 10rem 0.5rem;
 }
+@media screen and (max-width: 767px) {
+  .event_btns {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .event_btns a {
+    height: 5rem;
+    line-height: 4.6rem;
+  }
+  .event_btns a:nth-child(1) {
+    width: 30%;
+    margin-left: 2rem;
+  }
+  .event_btns a:nth-child(2) {
+    width: 25%;
+    margin-left: 2rem;
+  }
+  .event_btns a:nth-child(3) {
+    width: 25%;
+    margin-left: 1rem;
+  }
+}
 
 .service_detail_title {
   font-size: 25px;
   color: #d6ae7b;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .service_detail_title {
+    margin: 4rem 0;
+  }
+}
 
 .service_catch_copy {
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #5C5C5C;
   font-weight: bold;
   text-align: center;
@@ -752,6 +1011,11 @@ main {
   display: flex;
   margin-bottom: 0.7rem;
 }
+@media screen and (max-width: 767px) {
+  .bonus_container .bonus_list .bonus_part {
+    width: 100%;
+  }
+}
 .bonus_container .bonus_list .bonus_part .bonus_title {
   position: relative;
   display: flex;
@@ -779,6 +1043,11 @@ main {
 .my_title {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .my_title {
+    flex-direction: column;
+  }
+}
 .my_title .my_title_left {
   margin-right: 7rem;
 }
@@ -802,6 +1071,11 @@ main {
   border-radius: 0.5rem;
   text-align: center;
   line-height: 2.7rem;
+}
+@media screen and (max-width: 767px) {
+  .my_title .my_title_right {
+    margin-top: 4rem;
+  }
 }
 .my_title .my_title_right .next_title {
   display: flex;
@@ -841,7 +1115,7 @@ main {
 }
 .title_conditions_list .conditions_part .conditons_body {
   text-align: center;
-  padding: 1rem 5rem;
+  padding: 2.5rem;
 }
 .title_conditions_list .conditions_part:nth-child(1) {
   border: 1px solid #65adba;
@@ -860,6 +1134,20 @@ main {
 }
 .title_conditions_list .conditions_part:nth-child(3) .conditons_title {
   background: var(--unnamed, linear-gradient(90deg, #00B379 0%, #47D3A6 37.5%, #78F5CD 52.6%, #47D3A6 67.19%, #00B379 100%));
+}
+@media screen and (max-width: 767px) {
+  .title_conditions_list {
+    flex-direction: column;
+  }
+  .title_conditions_list .conditions_part {
+    margin-bottom: 2rem;
+  }
+  .title_conditions_list .conditions_part .conditons_title {
+    padding: 2rem;
+  }
+  .title_conditions_list .conditions_part .conditons_body {
+    font-size: 3rem;
+  }
 }
 
 .learn_container, .connect_service_container, .registration_container {
@@ -900,6 +1188,18 @@ main {
 .learn_detail_list .learn_part .learn_box .learn_document_video a:nth-child(2) {
   margin: 1rem auto 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .learn_detail_list {
+    justify-content: space-between;
+  }
+  .learn_detail_list .learn_part {
+    width: 48%;
+    margin: 2rem 0;
+  }
+  .learn_detail_list .learn_part .learn_box {
+    height: 26rem;
+  }
+}
 
 .pagenation {
   text-align: center;
@@ -908,6 +1208,14 @@ main {
 .pagenation a {
   padding: 0.2rem 0.4rem;
   margin-left: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .pagenation {
+    margin-top: 2rem;
+  }
+  .pagenation a {
+    font-size: 2.5rem;
+  }
 }
 
 .other_category {
@@ -922,6 +1230,15 @@ main {
   padding: 0.5rem 3rem;
   margin-right: 1.5rem;
   border: 1px solid #5C5C5C;
+}
+@media screen and (max-width: 767px) {
+  .other_category .category_list .category_part {
+    width: 25%;
+    margin-bottom: 2rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-align: center;
+  }
 }
 
 .introducer_container {
@@ -947,6 +1264,29 @@ main {
   width: 13rem;
   display: inline-block;
 }
+@media screen and (max-width: 767px) {
+  .introducer_list .introducer_part label {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .introducer_list .introducer_part:nth-child(3) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .introducer_list .introducer_part:nth-child(3) label {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .introducer_list .introducer_part:nth-child(3) span {
+    margin-right: 0.5rem;
+    line-height: 3.6rem;
+  }
+  .introducer_list .introducer_part:nth-child(3) input {
+    margin-right: 0.5rem;
+  }
+}
 .introducer_list .search_form_btn {
   display: flex;
   justify-content: center;
@@ -963,6 +1303,11 @@ main {
 }
 .introducer_list .search_form_btn p {
   line-height: 2.4rem;
+}
+@media screen and (max-width: 767px) {
+  .introducer_list .search_form_btn {
+    width: 100%;
+  }
 }
 
 .basic_information_title, .bisiness_information_title, .address_information_title, .bank_information_title {
@@ -1056,6 +1401,20 @@ main {
   z-index: 3;
 }
 
+@media screen and (max-width: 767px) {
+  .rectangle_triangle_container:nth-child(1) {
+    width: 31.3%;
+  }
+  .rectangle_triangle_container:nth-child(2) .rectangle {
+    padding-left: 6rem;
+  }
+  .rectangle_triangle_container:nth-child(3) {
+    width: 35.3%;
+  }
+  .rectangle_triangle_container:nth-child(3) .rectangle {
+    padding-left: 5rem;
+  }
+}
 .form_edit_title {
   color: #8E8E8E;
   font-weight: normal;
@@ -1074,6 +1433,16 @@ main {
   padding: 0rem 0.6rem;
   margin-left: 0.9rem;
 }
+@media screen and (max-width: 767px) {
+  .form_part_title {
+    padding: 1rem;
+    height: 5rem;
+    align-items: center;
+  }
+  .form_part_title span {
+    padding: 0.5rem 0.6rem;
+  }
+}
 
 .form_part_input {
   padding: 1rem 1.5rem;
@@ -1083,6 +1452,11 @@ main {
   font-size: 1.6rem;
   padding: 0.5rem 1rem;
   width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .form_part_input .input_text_form {
+    width: 100%;
+  }
 }
 .form_part_input p {
   color: #888888;
@@ -1345,6 +1719,15 @@ main {
   line-height: normal;
   padding-top: 1.5rem;
 }
+@media screen and (max-width: 767px) {
+  .admin_lsit {
+    justify-content: space-between;
+  }
+  .admin_lsit a {
+    margin: 0 0 2rem 0;
+    width: 49%;
+  }
+}
 
 .seminar_add_part {
   display: flex;
@@ -1471,4 +1854,74 @@ main {
 }
 .admin_category_list a {
   margin-right: 2rem;
+}
+
+/* css/index.css */
+@media (max-width: 768px) {
+  /* ハンバーガーアイコンのスタイル */
+  #nav-icon {
+    width: 5rem;
+    height: 2.7rem;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the icon stays on top when open */
+  }
+  #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #333;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  #nav-icon.open {
+    top: -7px;
+  }
+  #nav-icon span:nth-child(1) {
+    top: 6px;
+  }
+  #nav-icon span:nth-child(2) {
+    top: 14px;
+  }
+  #nav-icon span:nth-child(3) {
+    top: 22px;
+  }
+  #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+    background-color: #333;
+  }
+  #nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  #nav-icon.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+    background-color: #333;
+  }
+  #mobile-nav {
+    position: fixed;
+    right: -70rem;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    padding: 12rem 2rem 2rem 2rem;
+    transition: right 0.5s ease-in-out;
+    z-index: 1;
+  }
+  #mobile-nav.open {
+    right: 0; /* メニューが開いたときは画面内に移動します */
+  }
+  #mobile-nav li {
+    color: #fff;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=index.css.map */

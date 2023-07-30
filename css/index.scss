@@ -8,7 +8,7 @@ html {
     font-size: 50%; // タブレットサイズ
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 600) {
     font-size: 40%; // モバイルサイズ
   }
 
@@ -38,6 +38,7 @@ a:hover{
 input, textarea{
   border: 1px solid #AFAFAF;
   border-radius: 0.3rem !important;
+  padding: 0.3rem;
 }
 textarea{
   padding: 1rem 2rem !important;
@@ -74,6 +75,12 @@ textarea{
 }
 .w69{
   width: 69%;
+}
+.display_moble{
+  display: block;
+  @include mobile.mobile_media{
+    display: none;
+  }
 }
 
 table {
@@ -145,6 +152,9 @@ $border_radius: 0.5rem;
 }
 .common_size16{
   font-size: 1.6rem;
+  @include mobile.mobile_media{
+    font-size: 2rem;
+  }
 }
 .common_size20{
   font-size: 2rem;
@@ -152,9 +162,15 @@ $border_radius: 0.5rem;
 }
 .common_size13{
   font-size: 1.3rem;
+  @include mobile.mobile_media{
+    font-size: 1.7rem;
+  }
 }
 .common_size18{
   font-size: 1.8rem;
+  @include mobile.mobile_media{
+    font-size: 2.2rem;
+  }
 }
 .common_a{
   color: #0085FF;
@@ -189,6 +205,11 @@ $border_radius: 0.5rem;
   font-weight: bold;
   text-align: center;
   line-height: 3.8rem;
+  @include mobile.mobile_media{
+    width: 23rem;
+    height: 6rem;
+    line-height: 6rem;
+  }
 }
 .common_field_title{
   margin-bottom: 2rem;
@@ -197,6 +218,9 @@ $border_radius: 0.5rem;
     text-align: center;
     color: #5C5C5C;
     margin-bottom: 1.3rem;
+    @include mobile.mobile_media{
+      font-size: 3rem;
+    }
   }
 }
 .common_box_beige{
@@ -251,12 +275,21 @@ $border_radius: 0.5rem;
     font-weight: bold;
     color: $black;
   }
+  @include mobile.mobile_media{
+    padding: 2rem 1.5rem;
+    p:nth-child(1){
+      width: 50%;
+    }
+  }
 }
 .detail_btn{
   margin-left: auto;
   a{
     border-radius: 0.3rem;
     padding: 0.5rem 2rem;
+    @include mobile.mobile_media{
+      padding: 1rem 5rem;
+    }
   }
 }
 .edit_btn, .add_btn, .back_btn{
@@ -265,6 +298,9 @@ $border_radius: 0.5rem;
   margin-left: auto;
   font-size: 1.6rem;
   width: 6.4rem;
+  @include mobile.mobile_media{
+    line-height: 3.5rem;
+  }
 }
 .not_border{
   border-bottom: none;
@@ -301,6 +337,9 @@ main{
   .header_left{
     width: 11%;
     margin-left: 1rem;
+    @include tablet.tablet_media{
+      width: 22%;
+    }
     img{
       height: 100%;
       object-fit: contain;
@@ -310,6 +349,9 @@ main{
     display: flex;
     align-items: center;
     margin-left: auto;
+    @include tablet.tablet_media{
+      display: none;
+    }
     ul{
       display: flex;
       color: #666666;
@@ -317,6 +359,14 @@ main{
         font-size: 1.6rem;
         margin-right: 2.5rem;
       }
+    }
+  }
+  .header_right_mobile{
+    display: none;
+    margin-left: auto;
+    @include tablet.tablet_media{
+      display: block;
+      margin-right: 2rem;
     }
   }
 }
@@ -330,12 +380,20 @@ main{
   height: 14.4rem;
   position: relative;
   margin-top: 9rem;
+  @include mobile.mobile_media{
+    width: 100%;
+    height: 16.7rem;
+  }
   .profile_self_image{
     width: 12.7rem;
     height: 12.5rem;
     position: absolute;
     top: -6.5rem;
     left: 19.2rem;
+    @include mobile.mobile_media{
+      left: 50%;
+      transform: translateX(-50%);
+    }
     img{
       height: 100%;
       object-fit: cover;
@@ -346,6 +404,9 @@ main{
     display: flex;
     padding: 7.5rem 4.5rem 0 4.5rem;
     justify-content: space-evenly;
+    @include mobile.mobile_media{
+      padding-right: 0.5rem;
+    }
     .profile_info_details{
       display: flex;
       flex-direction: column;
@@ -381,25 +442,33 @@ main{
 // uranai
 .uranai_link{
   display: block;
-    width: 37.5rem;
-    .uranai{
-      height: 6.2rem;
-      border-radius: 10px;
-      background: var(--unnamed, linear-gradient(90deg, #DBAB00 0%, #F2D15E 32.29%, #FFE794 50%, #F2D15E 69.79%, #DBAB00 100%, #DBAB00 100%));
-      box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.25);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 3rem;
-      .uranai_icon{
-        width: 3rem;
-        height: 3rem;
-        margin-right: 1.4rem;
-      }
-      p{
-        color: $white;
-      }
+  width: 37.5rem;
+  @include mobile.mobile_media{
+    width: 100%;
+    height: 8rem;
+  }
+  .uranai{
+    height: 6.2rem;
+    border-radius: 10px;
+    background: var(--unnamed, linear-gradient(90deg, #DBAB00 0%, #F2D15E 32.29%, #FFE794 50%, #F2D15E 69.79%, #DBAB00 100%, #DBAB00 100%));
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    @include mobile.mobile_media{
+      height: 100%;
+      margin-top: 2rem;
     }
+    .uranai_icon{
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1.4rem;
+    }
+    p{
+      color: $white;
+    }
+  }
 }
 
 // menu_list
@@ -407,6 +476,17 @@ main{
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
+  @include mobile.mobile_media{
+    margin-top: 2rem;
+    justify-content: space-between;
+    a{
+      width: 49%;
+      .menu_part{
+        width: 100%;
+        height: 11rem;
+      }
+    }
+  }
   .menu_part{
     width: 20.5rem;
     height: 9.6rem;
@@ -444,6 +524,10 @@ main{
 .pankuzu{
   margin: 1.6rem 0;
   color: $black;
+  @include mobile.mobile_media{
+    margin-bottom: 3rem;
+    font-size: 1rem;
+  }
 }
 
 .reservation_switch_btn{
@@ -454,6 +538,15 @@ main{
   a:nth-child(1){
     color: #EACDA3;
     background: linear-gradient(90deg, rgba(234, 205, 163, 0.16) 0%, rgba(214, 174, 123, 0.16) 100%);
+  }
+  @include mobile.mobile_media{
+    width: 100%;
+    margin: 3rem 0;
+    a{
+      width: 49%;
+      height: 5rem;
+      line-height: 5rem;
+    }
   }
 }
 
@@ -481,6 +574,10 @@ main{
   border-radius: 2px;
   text-align: center;
   font-size: 1.6rem;
+  @include mobile.mobile_media{
+    width: 11rem;
+    height: 4rem;
+  }
 }
 .reservation_list{
   margin: 1.5rem 0 10rem 0;
@@ -489,15 +586,31 @@ main{
     border-bottom: 1px solid $beige;
     width: 40%;
     padding: 1.5rem;
+    @include tablet.tablet_media{
+      width: 100%;
+      height: 14rem;
+    }
     .reservation_left{
       color: $black;
       margin-right: 2rem;
+      @include mobile.mobile_media{
+        text-align: center;
+        padding-top: 2.2rem;
+        width: 20%;
+        p{
+          text-align: center;
+        }
+      }
     }
     .reservation_right{
       width: 40rem;
       height: 8.5rem;
       display: flex;
       flex-direction: column;
+      @include mobile.mobile_media{
+        height: auto;
+        width: 80%;
+      }
       .reservation_info_top{
         display: flex;
         padding: 1rem;
@@ -515,10 +628,18 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
+            @include tablet.tablet_media{
+              height: 4rem;
+            }
             .reservation_calender{
               width: 2rem;
               height: 2rem;
               margin-right: 0.3rem;
+            }
+            @include tablet.tablet_media{
+              .reservation_calender img{
+                vertical-align: baseline;
+              }
             }
           }
         }
@@ -534,6 +655,9 @@ main{
             font-size: 1.6rem;
             text-align: center;
             line-height: 2.5rem;
+            @include mobile.mobile_media{
+              line-height: 3rem;
+            }
           }
         }
         .reservation_info_bottom_right{
@@ -541,6 +665,11 @@ main{
           font-size: 1.4rem;
           line-height: 2.7rem;
           padding-left: 2rem;
+        }
+        @include mobile.mobile_media{
+          .reservation_info_bottom_right p{
+            line-height: 3.5rem;
+          }
         }
       }
     }
@@ -553,10 +682,13 @@ main{
   margin: 4rem 0 2rem 0;
   color: $black;
 }
-.reservation_confirm_container{
+.reservation_confirm_container, .reservation_cancel_container{
   width: 50.4rem;
   .confirm_info{
     color: $black;
+  }
+  @include mobile.mobile_media{
+    width: 100%;
   }
 }
 .reservation_confirm_switch_btn{
@@ -567,6 +699,12 @@ main{
   a{
     background: $base_background;
     color: white;
+  }
+  @include mobile.mobile_media{
+    width: 77%;
+    a{
+      width: 48%;
+    }
   }
 }
 
@@ -579,6 +717,9 @@ main{
     border: 1px solid #DCDCDC;
     padding: 1rem;
     color: $black;
+    @include mobile.mobile_media{
+      width: 100%;
+    }
     .reservation_status_top{
       display: flex;
       margin-bottom: 2rem;
@@ -586,11 +727,21 @@ main{
         border-radius: 0.5rem;
         padding: 0.4rem 2.3rem;
         margin-right: 1rem;
+        @include mobile.mobile_media{
+          width: 13rem;
+          text-align: center;
+          height: 4rem;
+          line-height: 3rem;
+        }
       }
       p:nth-child(2){
         font-size: 1.7rem;
         font-weight: bold;
         line-height: 2.8rem;
+        @include mobile.mobile_media{
+          font-size: 2.2rem;
+          line-height: 4rem;
+        }
       }
     }
     .reservation_status_bottom{
@@ -602,14 +753,25 @@ main{
         text-align: center;
         line-height: 3.3rem;
         margin-left: auto;
+        @include mobile.mobile_media{
+          width: 17rem;
+          line-height: 4.5rem;
+        }
+      }
+      @include mobile.mobile_media{
+        .reservation_info p{
+          font-size: 2.3rem;
+        }
       }
     }
   }
 }
 
+
 // event
 .event_list{
-  height: 55rem;
+  height: auto;
+  min-height: 55rem;
   margin-top: 4rem;
   background: white;
   padding: 2.3rem 3.5rem;
@@ -652,6 +814,9 @@ main{
 }
 .event_bottom_body{
   width: 65%;
+  @include mobile.mobile_media{
+    width: 100%;
+  }
   p{
     color: #5C5C5C;
     margin: 2rem 0 0 0;
@@ -668,6 +833,26 @@ main{
   a:nth-child(3){
     border-radius: 0.5rem 10rem 10rem 0.5rem;
   }
+  @include mobile.mobile_media{
+    width: 100%;
+    justify-content: flex-end;
+    a{
+      height: 5rem;
+      line-height: 4.6rem;
+    }
+    a:nth-child(1){
+      width: 30%;
+      margin-left: 2rem;
+    }
+    a:nth-child(2){
+      width: 25%;
+      margin-left: 2rem;
+    }
+    a:nth-child(3){
+      width: 25%;
+      margin-left: 1rem;
+    }
+  }
 }
 
 // connect_service
@@ -675,9 +860,12 @@ main{
   font-size: 25px;
   color: $beige;
   text-align: center;
+  @include mobile.mobile_media{
+    margin: 4rem 0;
+  }
 }
 .service_catch_copy{
-  font-size: 25px;
+  font-size: 2.5rem;
   color: $black;
   font-weight: bold;
   text-align: center;
@@ -715,6 +903,9 @@ main{
       border: 1px solid #d6ae7b;
       display: flex;
       margin-bottom: 0.7rem;
+      @include mobile.mobile_media{
+        width: 100%;
+      }
       .bonus_title{
         position: relative;
         display: flex;
@@ -745,6 +936,9 @@ main{
 // title
 .my_title{
   display: flex;
+  @include mobile.mobile_media{
+    flex-direction: column;
+  }
   .my_title_left{
     margin-right: 7rem;
     .my_title_batch{
@@ -768,6 +962,9 @@ main{
     border-radius: 0.5rem;
     text-align: center;
     line-height: 2.7rem;
+    @include mobile.mobile_media{
+      margin-top: 4rem;
+    }
     .next_title{
       display: flex;
       align-items: center;
@@ -804,7 +1001,7 @@ main{
     }
     .conditons_body{
       text-align: center;
-      padding: 1rem 5rem;
+      padding: 2.5rem;
     }
   }
   .conditions_part:nth-child(1){
@@ -823,6 +1020,18 @@ main{
     border: 1px solid $sapphire_color;
     .conditons_title{
       background: $sapphire_background;
+    }
+  }
+  @include mobile.mobile_media{
+    flex-direction: column;
+    .conditions_part{
+      margin-bottom: 2rem;
+      .conditons_title{
+        padding: 2rem;
+      }
+      .conditons_body{
+        font-size: 3rem;
+      }
     }
   }
 }
@@ -865,6 +1074,16 @@ main{
       }
     }
   }
+  @include mobile.mobile_media{
+    justify-content: space-between;
+    .learn_part{
+      width: 48%;
+      margin: 2rem 0;
+      .learn_box{
+        height: 26rem;
+      }
+    }
+  }
 }
 .pagenation{
   text-align: center;
@@ -872,6 +1091,12 @@ main{
   a{
     padding: 0.2rem 0.4rem;
     margin-left: 0.5rem;
+  }
+  @include mobile.mobile_media{
+    margin-top: 2rem;
+    a{
+      font-size: 2.5rem;
+    }
   }
 }
 .other_category{
@@ -884,6 +1109,13 @@ main{
       padding: 0.5rem 3rem;
       margin-right: 1.5rem;
       border: 1px solid $black;
+      @include mobile.mobile_media{
+        width: 25%;
+        margin-bottom: 2rem;
+        display: inline-block;
+        padding: 1rem 3rem;
+        text-align: center;
+      }
     }
   }
 }
@@ -909,6 +1141,27 @@ main{
       font-weight: bold;
       width: 13rem;
       display: inline-block;
+      @include mobile.mobile_media{
+        width: 17rem;
+      }
+    }
+  }
+  @include mobile.mobile_media{
+    .introducer_part:nth-child(3){
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+      label{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      span{
+        margin-right: 0.5rem;
+        line-height: 3.6rem;
+      }
+      input{
+        margin-right: 0.5rem;
+      }
     }
   }
   .search_form_btn{
@@ -926,6 +1179,9 @@ main{
     }
     p{
       line-height: 2.4rem;
+    }
+    @include mobile.mobile_media{
+      width: 100%;
     }
   }
 }
@@ -1020,6 +1276,23 @@ main{
     z-index: 3;
   }
 }
+@include mobile.mobile_media{
+  .rectangle_triangle_container:nth-child(1){
+    width: 31.3%;
+  }
+  .rectangle_triangle_container:nth-child(2){
+    .rectangle{
+      padding-left: 6rem;
+    }
+  }
+  .rectangle_triangle_container:nth-child(3){
+    width: 35.3%;
+    .rectangle{
+      padding-left: 5rem;
+    }
+  }
+
+}
 
 .form_edit_title{
   color: #8E8E8E;
@@ -1037,6 +1310,14 @@ main{
     padding: 0rem 0.6rem;
     margin-left: 0.9rem;
   }
+  @include mobile.mobile_media{
+    padding: 1rem;
+    height: 5rem;
+    align-items: center;
+    span{
+      padding: 0.5rem 0.6rem;
+    }
+  }
 }
 .form_part_input{
   padding: 1rem 1.5rem;
@@ -1045,6 +1326,9 @@ main{
     font-size: 1.6rem;
     padding: 0.5rem 1rem;
     width: 30%;
+    @include mobile.mobile_media{
+      width: 100%;
+    }
   }
   p{
     color: #888888;
@@ -1294,6 +1578,13 @@ main{
     line-height: normal;
     padding-top: 1.5rem;
   }
+  @include mobile.mobile_media{
+    justify-content: space-between;
+    a{
+      margin: 0 0 2rem 0;
+      width: 49%;
+    }
+  }
 }
 // admin_seminar
 .seminar_add_part{
@@ -1414,5 +1705,85 @@ main{
   display: flex;
   a{
     margin-right: 2rem;
+  }
+}
+
+/* css/index.css */
+
+@media (max-width: 768px) {
+  /* ハンバーガーアイコンのスタイル */
+  #nav-icon {
+    width: 5rem;
+    height: 2.7rem;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the icon stays on top when open */
+  }
+  #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #333;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  #nav-icon.open{
+    top: -7px;
+  }
+
+  #nav-icon span:nth-child(1) {
+    top:6px
+  }
+
+  #nav-icon span:nth-child(2) {
+    top: 14px
+  }
+
+  #nav-icon span:nth-child(3) {
+    top: 22px
+  }
+
+  #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+    background-color: #333;
+  }
+
+  #nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+
+  #nav-icon.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+    background-color: #333;
+  }
+
+  #mobile-nav {
+    position: fixed;
+    right: -70rem;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    padding: 12rem 2rem 2rem 2rem;
+    transition: right .5s ease-in-out;
+    z-index: 1;
+  }
+
+  #mobile-nav.open {
+    right: 0;  /* メニューが開いたときは画面内に移動します */
+  }
+
+  #mobile-nav li {
+    color: #fff;
+    margin-bottom: 10px;
   }
 }
