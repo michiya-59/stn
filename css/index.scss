@@ -1,6 +1,4 @@
-@use "tablet_responsive" as tablet;
-@use "phone_responsive" as mobile;
-
+@use "responsive" as responsive;
 html {
   font-size: 62.5%;
   
@@ -78,7 +76,7 @@ textarea{
 }
 .display_moble{
   display: block;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     display: none;
   }
 }
@@ -91,6 +89,9 @@ table {
     color: white;
     padding: 1rem 4rem;
     display: table-caption;
+    @include responsive.responsive_media(sp){
+      padding: 1rem 1rem;
+    }
     tr{
       font-size: 1.8rem;
     }
@@ -152,7 +153,7 @@ $border_radius: 0.5rem;
 }
 .common_size16{
   font-size: 1.6rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     font-size: 2rem;
   }
 }
@@ -162,13 +163,13 @@ $border_radius: 0.5rem;
 }
 .common_size13{
   font-size: 1.3rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     font-size: 1.7rem;
   }
 }
 .common_size18{
   font-size: 1.8rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     font-size: 2.2rem;
   }
 }
@@ -205,7 +206,7 @@ $border_radius: 0.5rem;
   font-weight: bold;
   text-align: center;
   line-height: 3.8rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 23rem;
     height: 6rem;
     line-height: 6rem;
@@ -218,7 +219,7 @@ $border_radius: 0.5rem;
     text-align: center;
     color: #5C5C5C;
     margin-bottom: 1.3rem;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       font-size: 3rem;
     }
   }
@@ -275,7 +276,7 @@ $border_radius: 0.5rem;
     font-weight: bold;
     color: $black;
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     padding: 2rem 1.5rem;
     p:nth-child(1){
       width: 50%;
@@ -287,7 +288,7 @@ $border_radius: 0.5rem;
   a{
     border-radius: 0.3rem;
     padding: 0.5rem 2rem;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       padding: 1rem 5rem;
     }
   }
@@ -298,7 +299,7 @@ $border_radius: 0.5rem;
   margin-left: auto;
   font-size: 1.6rem;
   width: 6.4rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     line-height: 3.5rem;
   }
 }
@@ -337,7 +338,7 @@ main{
   .header_left{
     width: 11%;
     margin-left: 1rem;
-    @include tablet.tablet_media{
+    @include responsive.responsive_media(tab){
       width: 22%;
     }
     img{
@@ -349,7 +350,7 @@ main{
     display: flex;
     align-items: center;
     margin-left: auto;
-    @include tablet.tablet_media{
+    @include responsive.responsive_media(tab){
       display: none;
     }
     ul{
@@ -364,7 +365,7 @@ main{
   .header_right_mobile{
     display: none;
     margin-left: auto;
-    @include tablet.tablet_media{
+    @include responsive.responsive_media(tab){
       display: block;
       margin-right: 2rem;
     }
@@ -380,7 +381,7 @@ main{
   height: 14.4rem;
   position: relative;
   margin-top: 9rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 100%;
     height: 16.7rem;
   }
@@ -390,7 +391,7 @@ main{
     position: absolute;
     top: -6.5rem;
     left: 19.2rem;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       left: 50%;
       transform: translateX(-50%);
     }
@@ -404,7 +405,7 @@ main{
     display: flex;
     padding: 7.5rem 4.5rem 0 4.5rem;
     justify-content: space-evenly;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       padding-right: 0.5rem;
     }
     .profile_info_details{
@@ -443,7 +444,7 @@ main{
 .uranai_link{
   display: block;
   width: 37.5rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 100%;
     height: 8rem;
   }
@@ -456,7 +457,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       height: 100%;
       margin-top: 2rem;
     }
@@ -476,7 +477,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     margin-top: 2rem;
     justify-content: space-between;
     a{
@@ -524,7 +525,7 @@ main{
 .pankuzu{
   margin: 1.6rem 0;
   color: $black;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     margin-bottom: 3rem;
     font-size: 1rem;
   }
@@ -539,7 +540,7 @@ main{
     color: #EACDA3;
     background: linear-gradient(90deg, rgba(234, 205, 163, 0.16) 0%, rgba(214, 174, 123, 0.16) 100%);
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 100%;
     margin: 3rem 0;
     a{
@@ -574,7 +575,7 @@ main{
   border-radius: 2px;
   text-align: center;
   font-size: 1.6rem;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 11rem;
     height: 4rem;
   }
@@ -586,14 +587,14 @@ main{
     border-bottom: 1px solid $beige;
     width: 40%;
     padding: 1.5rem;
-    @include tablet.tablet_media{
+    @include responsive.responsive_media(tab){
       width: 100%;
       height: 14rem;
     }
     .reservation_left{
       color: $black;
       margin-right: 2rem;
-      @include mobile.mobile_media{
+      @include responsive.responsive_media(sp){
         text-align: center;
         padding-top: 2.2rem;
         width: 20%;
@@ -607,7 +608,7 @@ main{
       height: 8.5rem;
       display: flex;
       flex-direction: column;
-      @include mobile.mobile_media{
+      @include responsive.responsive_media(sp){
         height: auto;
         width: 80%;
       }
@@ -628,7 +629,7 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            @include tablet.tablet_media{
+            @include responsive.responsive_media(tab){
               height: 4rem;
             }
             .reservation_calender{
@@ -636,7 +637,7 @@ main{
               height: 2rem;
               margin-right: 0.3rem;
             }
-            @include tablet.tablet_media{
+            @include responsive.responsive_media(tab){
               .reservation_calender img{
                 vertical-align: baseline;
               }
@@ -655,7 +656,7 @@ main{
             font-size: 1.6rem;
             text-align: center;
             line-height: 2.5rem;
-            @include mobile.mobile_media{
+            @include responsive.responsive_media(sp){
               line-height: 3rem;
             }
           }
@@ -666,7 +667,7 @@ main{
           line-height: 2.7rem;
           padding-left: 2rem;
         }
-        @include mobile.mobile_media{
+        @include responsive.responsive_media(sp){
           .reservation_info_bottom_right p{
             line-height: 3.5rem;
           }
@@ -687,7 +688,7 @@ main{
   .confirm_info{
     color: $black;
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 100%;
   }
 }
@@ -700,7 +701,7 @@ main{
     background: $base_background;
     color: white;
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 77%;
     a{
       width: 48%;
@@ -717,7 +718,7 @@ main{
     border: 1px solid #DCDCDC;
     padding: 1rem;
     color: $black;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       width: 100%;
     }
     .reservation_status_top{
@@ -727,7 +728,7 @@ main{
         border-radius: 0.5rem;
         padding: 0.4rem 2.3rem;
         margin-right: 1rem;
-        @include mobile.mobile_media{
+        @include responsive.responsive_media(sp){
           width: 13rem;
           text-align: center;
           height: 4rem;
@@ -738,7 +739,7 @@ main{
         font-size: 1.7rem;
         font-weight: bold;
         line-height: 2.8rem;
-        @include mobile.mobile_media{
+        @include responsive.responsive_media(sp){
           font-size: 2.2rem;
           line-height: 4rem;
         }
@@ -753,12 +754,12 @@ main{
         text-align: center;
         line-height: 3.3rem;
         margin-left: auto;
-        @include mobile.mobile_media{
+        @include responsive.responsive_media(sp){
           width: 17rem;
           line-height: 4.5rem;
         }
       }
-      @include mobile.mobile_media{
+      @include responsive.responsive_media(sp){
         .reservation_info p{
           font-size: 2.3rem;
         }
@@ -794,7 +795,7 @@ main{
     .event_part_bottom{
       padding-bottom: 2rem;
       a{
-        display: block;
+        display: inline;
         width: max-content;
         border-bottom: 1px solid black;
       }
@@ -814,7 +815,7 @@ main{
 }
 .event_bottom_body{
   width: 65%;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 100%;
   }
   p{
@@ -833,7 +834,7 @@ main{
   a:nth-child(3){
     border-radius: 0.5rem 10rem 10rem 0.5rem;
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     width: 100%;
     justify-content: flex-end;
     a{
@@ -860,7 +861,7 @@ main{
   font-size: 25px;
   color: $beige;
   text-align: center;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     margin: 4rem 0;
   }
 }
@@ -903,7 +904,7 @@ main{
       border: 1px solid #d6ae7b;
       display: flex;
       margin-bottom: 0.7rem;
-      @include mobile.mobile_media{
+      @include responsive.responsive_media(sp){
         width: 100%;
       }
       .bonus_title{
@@ -936,7 +937,7 @@ main{
 // title
 .my_title{
   display: flex;
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     flex-direction: column;
   }
   .my_title_left{
@@ -962,7 +963,7 @@ main{
     border-radius: 0.5rem;
     text-align: center;
     line-height: 2.7rem;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       margin-top: 4rem;
     }
     .next_title{
@@ -1022,7 +1023,7 @@ main{
       background: $sapphire_background;
     }
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     flex-direction: column;
     .conditions_part{
       margin-bottom: 2rem;
@@ -1074,7 +1075,7 @@ main{
       }
     }
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     justify-content: space-between;
     .learn_part{
       width: 48%;
@@ -1092,7 +1093,7 @@ main{
     padding: 0.2rem 0.4rem;
     margin-left: 0.5rem;
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     margin-top: 2rem;
     a{
       font-size: 2.5rem;
@@ -1109,7 +1110,7 @@ main{
       padding: 0.5rem 3rem;
       margin-right: 1.5rem;
       border: 1px solid $black;
-      @include mobile.mobile_media{
+      @include responsive.responsive_media(sp){
         width: 25%;
         margin-bottom: 2rem;
         display: inline-block;
@@ -1141,12 +1142,12 @@ main{
       font-weight: bold;
       width: 13rem;
       display: inline-block;
-      @include mobile.mobile_media{
+      @include responsive.responsive_media(sp){
         width: 17rem;
       }
     }
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     .introducer_part:nth-child(3){
       display: flex;
       flex-wrap: wrap;
@@ -1180,7 +1181,7 @@ main{
     p{
       line-height: 2.4rem;
     }
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       width: 100%;
     }
   }
@@ -1276,7 +1277,7 @@ main{
     z-index: 3;
   }
 }
-@include mobile.mobile_media{
+@include responsive.responsive_media(sp){
   .rectangle_triangle_container:nth-child(1){
     width: 31.3%;
   }
@@ -1310,7 +1311,7 @@ main{
     padding: 0rem 0.6rem;
     margin-left: 0.9rem;
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     padding: 1rem;
     height: 5rem;
     align-items: center;
@@ -1326,7 +1327,7 @@ main{
     font-size: 1.6rem;
     padding: 0.5rem 1rem;
     width: 30%;
-    @include mobile.mobile_media{
+    @include responsive.responsive_media(sp){
       width: 100%;
     }
   }
@@ -1374,8 +1375,15 @@ main{
   width: 44.5rem;
   margin: 0 auto;
   margin-top: 6rem;
-  @include mobile.mobile_media{
-    margin-top: 30rem;
+  @include responsive.responsive_media(sp){
+    margin-top: 37rem;
+    width: 55rem;
+  }
+  @include responsive.responsive_media(sp_375){
+    margin-top: 25rem;
+  }
+  @include responsive.responsive_media(sp_320){
+    margin-top: 20rem;
   }
 }
 .login_form{
@@ -1391,9 +1399,19 @@ main{
       .login_icon_img{
         width: 2.5rem;
       }
+      @include responsive.responsive_media(sp){
+        width: 11rem;
+        .login_icon_img{
+          margin: 0 auto;
+          width: 3.5rem;
+        }
+      }
     }
     .login_form_right{
       width: 25%;
+      @include responsive.responsive_media(sp){
+        width: 50%;
+      }
       input{
         height: 100%;
         width: 100%;
@@ -1418,6 +1436,9 @@ main{
   p{
     margin-left: 0.8rem;
     line-height: 3rem;
+  }
+  @include responsive.responsive_media(sp){
+    width: 35%;
   }
 }
 .reset_link{
@@ -1457,15 +1478,19 @@ main{
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 30rem;
-  @include mobile.mobile_media{
+  height: 30%;
+  @include responsive.responsive_media(sp){
     img{
       height: 100%;
     }
   }
+  @include responsive.responsive_media(sp_430){
+    height: 34%;
+  }
 }
 .wave svg {
   height: 100%;
+  width: 102%;
 }
 
 // password_reset
@@ -1578,7 +1603,7 @@ main{
     line-height: normal;
     padding-top: 1.5rem;
   }
-  @include mobile.mobile_media{
+  @include responsive.responsive_media(sp){
     justify-content: space-between;
     a{
       margin: 0 0 2rem 0;
@@ -1735,6 +1760,7 @@ main{
   }
   #nav-icon.open{
     top: -7px;
+    z-index: 1001;
   }
 
   #nav-icon span:nth-child(1) {
@@ -1773,17 +1799,31 @@ main{
     width: 50%;
     height: 100%;
     background: white;
-    padding: 12rem 2rem 2rem 2rem;
+    padding: 12rem 0;
     transition: right .5s ease-in-out;
-    z-index: 1;
+    z-index: 1000;
   }
 
   #mobile-nav.open {
     right: 0;  /* メニューが開いたときは画面内に移動します */
+    z-index: 1000;
   }
 
   #mobile-nav li {
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    color: #666666;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #d8b27f;
+    padding-bottom: 1.5rem;
     margin-bottom: 10px;
+  }
+  #mobile-nav li a{
+    margin-right: 2rem;
+  }
+  #mobile-nav li div{
+    width: 1.7rem;
+    height: 2.2rem;
+    line-height: 2.6rem;
   }
 }
