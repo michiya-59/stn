@@ -1,10 +1,10 @@
 $breakpoint: (
-  sp_320: 'screen and (max-width: 320px)',
-  sp_375: 'screen and (max-width: 375px)',
-  sp_430: 'screen and (max-width: 430px)',
-  sp: 'screen and (max-width: 767px)',
-  tab: 'screen and (max-width: 768px)',
-  pc: 'screen and (max-width: 1025px)'
+  sp_320: 'screen and (max-width: 320px)', // 320ピクセル以下のスマートフォン向けのスタイル
+  sp_375: 'screen and (max-width: 375px)', // 375ピクセル以下のスマートフォン向けのスタイル
+  sp_430: 'screen and (max-width: 430px)', // 430ピクセル以下のスマートフォン向けのスタイル
+  sp: 'screen and (max-width: 767px)', // 767ピクセル以下のスマートフォン向けのスタイル
+  tab_820: 'screen and (max-width: 820px)', // 820ピクセル以下のスマートフォン向けのスタイル
+  tab: 'screen and (max-width: 1024px)', // 1024ピクセル以下のスマートフォン向けのスタイル
 );
 
 @mixin responsive_media($bp) {

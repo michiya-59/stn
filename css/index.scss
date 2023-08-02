@@ -206,6 +206,12 @@ $border_radius: 0.5rem;
   font-weight: bold;
   text-align: center;
   line-height: 3.8rem;
+  @include responsive.responsive_media(tab){
+    font-size: 2.5rem;
+    height: 6rem;
+    line-height: 6rem;
+    width: 25rem;
+  }
   @include responsive.responsive_media(sp){
     width: 23rem;
     height: 6rem;
@@ -219,7 +225,7 @@ $border_radius: 0.5rem;
     text-align: center;
     color: #5C5C5C;
     margin-bottom: 1.3rem;
-    @include responsive.responsive_media(sp){
+    @include responsive.responsive_media(tab){
       font-size: 3rem;
     }
   }
@@ -276,6 +282,18 @@ $border_radius: 0.5rem;
     font-weight: bold;
     color: $black;
   }
+  @include responsive.responsive_media(tab){
+    padding: 2rem 1.5rem;
+    p:nth-child(1){
+      font-size: 2rem;
+    }
+    .detail_btn{
+      font-size: 2rem;
+      a{
+        padding: 1rem 4rem;
+      }
+    }
+  }
   @include responsive.responsive_media(sp){
     padding: 2rem 1.5rem;
     p:nth-child(1){
@@ -308,6 +326,9 @@ $border_radius: 0.5rem;
 }
 .text_center{
   text-align: center;
+  @include responsive.responsive_media(tab){
+    font-size: 2rem;
+  }
 }
 .admin_submit_btn{
   display: flex;
@@ -366,8 +387,19 @@ main{
     display: none;
     margin-left: auto;
     @include responsive.responsive_media(tab){
+      padding-top: 1rem;
       display: block;
       margin-right: 2rem;
+    }
+    @include responsive.responsive_media(tab_820){
+      padding-top: 0.5rem;
+      display: block;
+      margin-right: 2rem;
+    }
+    @include responsive.responsive_media(sp){
+      display: block;
+      margin-right: 2rem;
+      padding: 0;
     }
   }
 }
@@ -525,6 +557,9 @@ main{
 .pankuzu{
   margin: 1.6rem 0;
   color: $black;
+  @include responsive.responsive_media(tab){
+    font-size: 1.6rem;
+  }
   @include responsive.responsive_media(sp){
     margin-bottom: 3rem;
     font-size: 1rem;
@@ -539,6 +574,9 @@ main{
   a:nth-child(1){
     color: #EACDA3;
     background: linear-gradient(90deg, rgba(234, 205, 163, 0.16) 0%, rgba(214, 174, 123, 0.16) 100%);
+  }
+  @include responsive.responsive_media(tab){
+    width: 52rem;
   }
   @include responsive.responsive_media(sp){
     width: 100%;
@@ -557,6 +595,9 @@ main{
   font-size: 1.3rem;
   margin-right: 1rem;
   border-radius: 0.3rem;
+  @include responsive.responsive_media(tab){
+    font-size: 2rem;
+  }
 }
 .form_select select, .deposit_type select, .contract_info select, .admin_event_form_part select{
   padding: 0.5rem 1rem;
@@ -575,6 +616,12 @@ main{
   border-radius: 2px;
   text-align: center;
   font-size: 1.6rem;
+  @include responsive.responsive_media(tab){
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    width: 10rem;
+    height: auto;
+  }
   @include responsive.responsive_media(sp){
     width: 11rem;
     height: 4rem;
@@ -588,6 +635,9 @@ main{
     width: 40%;
     padding: 1.5rem;
     @include responsive.responsive_media(tab){
+      width: 55%;
+    }
+    @include responsive.responsive_media(sp){
       width: 100%;
       height: 14rem;
     }
@@ -697,9 +747,13 @@ main{
   width: 40rem;
   margin: 0 auto 1rem auto;
   justify-content: space-between;
+  
   a{
     background: $base_background;
     color: white;
+  }
+  @include responsive.responsive_media(tab){
+    width: 52rem;
   }
   @include responsive.responsive_media(sp){
     width: 77%;
@@ -798,6 +852,9 @@ main{
         display: inline;
         width: max-content;
         border-bottom: 1px solid black;
+        @include responsive.responsive_media(tab){
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -808,6 +865,9 @@ main{
   font-size: 2.7rem;
   color: #d6ae7b;
   margin: 2rem 0 0.5rem 0;
+  @include responsive.responsive_media(tab){
+    font-size: 2.5rem;
+  }
 }
 .event_top_info p{
   color: #5C5C5C;
@@ -815,6 +875,13 @@ main{
 }
 .event_bottom_body{
   width: 65%;
+  @include responsive.responsive_media(tab){
+    width: 100%;
+    line-height: 3.5rem;
+    p{
+      font-size: 2.5rem;
+    }
+  }
   @include responsive.responsive_media(sp){
     width: 100%;
   }
@@ -833,6 +900,18 @@ main{
   }
   a:nth-child(3){
     border-radius: 0.5rem 10rem 10rem 0.5rem;
+  }
+  @include responsive.responsive_media(tab){
+    width: 60%;
+    a:nth-child(1){
+      width: 31%;
+    }
+    a:nth-child(2){
+      width: 33%;
+    }
+    a:nth-child(3){
+      width: 33%;
+    }
   }
   @include responsive.responsive_media(sp){
     width: 100%;
@@ -904,7 +983,7 @@ main{
       border: 1px solid #d6ae7b;
       display: flex;
       margin-bottom: 0.7rem;
-      @include responsive.responsive_media(sp){
+      @include responsive.responsive_media(tab){
         width: 100%;
       }
       .bonus_title{
@@ -923,12 +1002,29 @@ main{
           img{
             height: 100%;
           }
+          @include responsive.responsive_media(tab){
+            top: 19%
+          }
+        }
+        @include responsive.responsive_media(tab){
+          width: 40%;
+          padding: 1.5rem;
+          p{
+            font-size: 2rem;
+          }
         }
       }
       .bonus_data{
         width: 62.2%;
         padding: 1rem;
         text-align: right;
+        @include responsive.responsive_media(tab){
+          padding: 1.5rem;
+          width: 77%;
+          p{
+            font-size: 2rem;
+          }
+        }
       }
     }
   }
@@ -956,6 +1052,9 @@ main{
         margin-right: 2rem;
       }
     }
+    @include responsive.responsive_media(tab){
+      width: 35%;
+    }
   }
   .my_title_right{
     border: 1px solid $ruby_color;
@@ -963,6 +1062,9 @@ main{
     border-radius: 0.5rem;
     text-align: center;
     line-height: 2.7rem;
+    @include responsive.responsive_media(tab){
+      width: 65%;
+    }
     @include responsive.responsive_media(sp){
       margin-top: 4rem;
     }
@@ -1003,6 +1105,12 @@ main{
     .conditons_body{
       text-align: center;
       padding: 2.5rem;
+      @include responsive.responsive_media(tab){
+        font-size: 2rem;
+      }
+    }
+    @include responsive.responsive_media(tab){
+      margin-right: 1.23rem;
     }
   }
   .conditions_part:nth-child(1){
@@ -1074,6 +1182,10 @@ main{
         }
       }
     }
+    @include responsive.responsive_media(tab){
+      width: 23.5%;
+      margin: 0 1rem 5rem 0;
+    }
   }
   @include responsive.responsive_media(sp){
     justify-content: space-between;
@@ -1092,6 +1204,10 @@ main{
   a{
     padding: 0.2rem 0.4rem;
     margin-left: 0.5rem;
+    @include responsive.responsive_media(tab){
+      font-size: 2rem;
+      padding: 0.8rem 1rem;
+    }
   }
   @include responsive.responsive_media(sp){
     margin-top: 2rem;
@@ -1110,6 +1226,10 @@ main{
       padding: 0.5rem 3rem;
       margin-right: 1.5rem;
       border: 1px solid $black;
+      @include responsive.responsive_media(tab){
+        font-size: 2.5rem;
+        padding: 1rem 5rem;
+      }
       @include responsive.responsive_media(sp){
         width: 25%;
         margin-bottom: 2rem;
@@ -1327,7 +1447,7 @@ main{
     font-size: 1.6rem;
     padding: 0.5rem 1rem;
     width: 30%;
-    @include responsive.responsive_media(sp){
+    @include responsive.responsive_media(tab){
       width: 100%;
     }
   }
@@ -1375,6 +1495,9 @@ main{
   width: 44.5rem;
   margin: 0 auto;
   margin-top: 6rem;
+  @include responsive.responsive_media(tab){
+    margin-top: 25rem;
+  }
   @include responsive.responsive_media(sp){
     margin-top: 37rem;
     width: 55rem;
@@ -1398,6 +1521,12 @@ main{
       border-radius: 8px 0px 0px 8px;
       .login_icon_img{
         width: 2.5rem;
+        @include responsive.responsive_media(tab){
+          height: auto;
+          img{
+            height: 3rem;
+          }
+        }
       }
       @include responsive.responsive_media(sp){
         width: 11rem;
@@ -1409,6 +1538,9 @@ main{
     }
     .login_form_right{
       width: 25%;
+      @include responsive.responsive_media(tab){
+        width: 40%;
+      }
       @include responsive.responsive_media(sp){
         width: 50%;
       }
@@ -1436,6 +1568,9 @@ main{
   p{
     margin-left: 0.8rem;
     line-height: 3rem;
+  }
+  @include responsive.responsive_media(tab){
+    width: 30%;
   }
   @include responsive.responsive_media(sp){
     width: 35%;
@@ -1479,6 +1614,9 @@ main{
   bottom: 0;
   width: 100%;
   height: 30%;
+  @include responsive.responsive_media(tab){
+    height: 35%;
+  }
   @include responsive.responsive_media(sp){
     img{
       height: 100%;
@@ -1735,7 +1873,7 @@ main{
 
 /* css/index.css */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* ハンバーガーアイコンのスタイル */
   #nav-icon {
     width: 5rem;
@@ -1768,11 +1906,11 @@ main{
   }
 
   #nav-icon span:nth-child(2) {
-    top: 14px
+    top: 19px;
   }
 
   #nav-icon span:nth-child(3) {
-    top: 22px
+    top: 33px
   }
 
   #nav-icon.open span:nth-child(1) {
@@ -1825,5 +1963,17 @@ main{
     width: 1.7rem;
     height: 2.2rem;
     line-height: 2.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #nav-icon span:nth-child(1) {
+    top:6px
+  }
+  #nav-icon span:nth-child(2) {
+    top: 14px
+  }
+  #nav-icon span:nth-child(3) {
+    top: 22px
   }
 }
