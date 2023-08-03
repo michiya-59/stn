@@ -7,14 +7,9 @@ html {
     font-size: 50%;
   }
 }
-@media (max-width: 600) {
+@media (max-width: 767px) {
   html {
     font-size: 40%;
-  }
-}
-@media (max-width: 520px) {
-  html {
-    font-size: 31.25%;
   }
 }
 
