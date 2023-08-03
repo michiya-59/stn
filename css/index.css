@@ -7,11 +7,6 @@ html {
     font-size: 50%;
   }
 }
-@media (max-width: 767px) {
-  html {
-    font-size: 40%;
-  }
-}
 
 html {
   -webkit-text-size-adjust: 100%;
