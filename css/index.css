@@ -106,6 +106,9 @@ textarea {
   }
 }
 
+input {
+  font-size: 16px;
+} /*フォームのフォーカスOFF*/
 table {
   width: 100%;
   border-collapse: collapse;
@@ -252,6 +255,7 @@ th, td {
     width: 23rem;
     height: 6rem;
     line-height: 6rem;
+    font-size: 2rem;
   }
 }
 
@@ -644,7 +648,7 @@ main {
 @media screen and (max-width: 767px) {
   .pankuzu {
     margin-bottom: 3rem;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -793,6 +797,9 @@ main {
   .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn {
     height: 4rem;
   }
+  .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn p {
+    font-size: 2rem;
+  }
 }
 .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn .reservation_calender {
   width: 2rem;
@@ -821,6 +828,7 @@ main {
 @media screen and (max-width: 767px) {
   .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_left p {
     line-height: 3rem;
+    font-size: 2rem;
   }
 }
 .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_right {
@@ -831,6 +839,7 @@ main {
 }
 @media screen and (max-width: 767px) {
   .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_right p {
+    font-size: 2rem;
     line-height: 3.5rem;
   }
 }
@@ -934,7 +943,7 @@ main {
 @media screen and (max-width: 767px) {
   .reservation_status_list .reservation_status_part .reservation_status_bottom .cancel_btn {
     width: 17rem;
-    line-height: 4.5rem;
+    line-height: 5.5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1636,6 +1645,11 @@ main {
   color: #888888;
   margin-top: 0.6rem;
 }
+@media screen and (max-width: 767px) {
+  .form_part_input p {
+    font-size: 2rem;
+  }
+}
 
 .gender_content, .two_thier_radio {
   display: flex;
@@ -1879,6 +1893,11 @@ main {
   top: 3rem;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  .input_order_line {
+    top: 4rem;
+  }
+}
 
 .basic_info p:nth-child(1), .address_info p:nth-child(1), .bank_info p:nth-child(1) {
   width: 6rem;
@@ -1891,6 +1910,14 @@ main {
   font-weight: bold;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .basic_info p:nth-child(1), .address_info p:nth-child(1), .bank_info p:nth-child(1) {
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    font-size: 3rem;
+  }
+}
 
 .contract p:nth-child(1) {
   width: 6rem;
@@ -1902,6 +1929,14 @@ main {
   color: white;
   font-weight: bold;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .contract p:nth-child(1) {
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    font-size: 3rem;
+  }
 }
 
 .basic_info p:nth-child(2), .address_info p:nth-child(2), .bank_info p:nth-child(2), .contract p:nth-child(2) {
