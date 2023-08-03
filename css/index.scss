@@ -721,7 +721,7 @@ main{
             line-height: 2.5rem;
             @include responsive.responsive_media(sp){
               height: 100%;
-              line-height: 4rem;
+              line-height: 4.5rem;
               font-size: 2rem;
             }
           }
@@ -735,7 +735,7 @@ main{
         @include responsive.responsive_media(sp){
           .reservation_info_bottom_right p{
             font-size: 2rem;
-            line-height: 4rem;
+            line-height: 4.5rem;
             height: 100%;
           }
         }
