@@ -837,7 +837,7 @@ main {
 @media screen and (max-width: 767px) {
   .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_left p {
     height: 100%;
-    line-height: 3.5rem;
+    line-height: 4rem;
     font-size: 2rem;
   }
 }
@@ -850,7 +850,7 @@ main {
 @media screen and (max-width: 767px) {
   .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_right p {
     font-size: 2rem;
-    line-height: 3.5rem;
+    line-height: 4rem;
     height: 100%;
   }
 }
