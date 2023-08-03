@@ -807,7 +807,7 @@ main {
 }
 @media screen and (max-width: 767px) {
   .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .reservation_list .reservation_part .reservation_right .reservation_info_top .reservation_info_top_right .reservation_btn .reservation_calender {
@@ -836,7 +836,8 @@ main {
 }
 @media screen and (max-width: 767px) {
   .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_left p {
-    line-height: 3rem;
+    height: 100%;
+    line-height: 3.5rem;
     font-size: 2rem;
   }
 }
@@ -850,6 +851,7 @@ main {
   .reservation_list .reservation_part .reservation_right .reservation_info_bottom .reservation_info_bottom_right p {
     font-size: 2rem;
     line-height: 3.5rem;
+    height: 100%;
   }
 }
 

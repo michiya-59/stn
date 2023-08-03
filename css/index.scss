@@ -692,7 +692,7 @@ main{
             }
             @include responsive.responsive_media(sp){
               p{
-                font-size: 2.5rem;
+                font-size: 2rem;
               }
             }
             .reservation_calender{
@@ -720,7 +720,8 @@ main{
             text-align: center;
             line-height: 2.5rem;
             @include responsive.responsive_media(sp){
-              line-height: 3rem;
+              height: 100%;
+              line-height: 3.5rem;
               font-size: 2rem;
             }
           }
@@ -735,6 +736,7 @@ main{
           .reservation_info_bottom_right p{
             font-size: 2rem;
             line-height: 3.5rem;
+            height: 100%;
           }
         }
       }
