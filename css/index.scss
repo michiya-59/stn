@@ -10,9 +10,9 @@ html {
     font-size: 40%; // モバイルサイズ
   }
 
-  @media (max-width: 520px) {
-    font-size: 31.25%; // モバイルサイズ
-  }
+  // @media (max-width: 520px) {
+  //   font-size: 31.25%; // モバイルサイズ
+  // }
 }
 
 body{
@@ -1089,6 +1089,7 @@ main{
     }
     @include responsive.responsive_media(sp){
       margin-top: 4rem;
+      width: 100%;
     }
     .next_title{
       display: flex;
@@ -1999,12 +2000,12 @@ main{
 
 @media (max-width: 767px) {
   #nav-icon span:nth-child(1) {
-    top:10px
+    top:16px
   }
   #nav-icon span:nth-child(2) {
-    top: 21px
+    top: 26px
   }
   #nav-icon span:nth-child(3) {
-    top: 33px
+    top: 37px
   }
 }

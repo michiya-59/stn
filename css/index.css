@@ -12,11 +12,6 @@ html {
     font-size: 40%;
   }
 }
-@media (max-width: 520px) {
-  html {
-    font-size: 31.25%;
-  }
-}
 
 body {
   font-family: "Tsukushi B Round Gothic";
@@ -1247,6 +1242,7 @@ main {
 @media screen and (max-width: 767px) {
   .my_title .my_title_right {
     margin-top: 4rem;
+    width: 100%;
   }
 }
 .my_title .my_title_right .next_title {
@@ -2232,12 +2228,12 @@ main {
 }
 @media (max-width: 767px) {
   #nav-icon span:nth-child(1) {
-    top: 10px;
+    top: 16px;
   }
   #nav-icon span:nth-child(2) {
-    top: 21px;
+    top: 26px;
   }
   #nav-icon span:nth-child(3) {
-    top: 33px;
+    top: 37px;
   }
 }/*# sourceMappingURL=index.css.map */
