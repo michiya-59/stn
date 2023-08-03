@@ -2,6 +2,21 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 520px) {
+  html {
+    font-size: 31.25%;
+  }
+}
 
 body {
   font-family: "Tsukushi B Round Gothic";
