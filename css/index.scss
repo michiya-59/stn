@@ -14,6 +14,10 @@ html {
     font-size: 31.25%; // モバイルサイズ
   }
 }
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body{
   font-family: 'Tsukushi B Round Gothic';
 }
@@ -656,7 +660,7 @@ main{
     }
     .reservation_right{
       width: 40rem;
-      height: 8.5rem;
+      height: auto;
       display: flex;
       flex-direction: column;
       @include responsive.responsive_media(sp){
@@ -684,6 +688,11 @@ main{
               height: 4rem;
               p{
                 font-size: 2rem;
+              }
+            }
+            @include responsive.responsive_media(sp){
+              p{
+                font-size: 2.5rem;
               }
             }
             .reservation_calender{
@@ -1461,7 +1470,7 @@ main{
     color: #888888;
     margin-top: 0.6rem;
     @include responsive.responsive_media(sp){
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 }
