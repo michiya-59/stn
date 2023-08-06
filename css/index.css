@@ -1739,6 +1739,14 @@ main {
   padding: 0rem 0.6rem;
   margin-left: 0.9rem;
 }
+@media screen and (max-width: 1024px) {
+  .form_part_title p {
+    font-size: 2rem;
+  }
+  .form_part_title span {
+    line-height: 2.7rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .form_part_title {
     padding: 1rem;
@@ -1747,14 +1755,7 @@ main {
   }
   .form_part_title span {
     padding: 0.5rem 0.6rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .form_part_title p {
-    font-size: 2rem;
-  }
-  .form_part_title span {
-    line-height: 2.7rem;
+    line-height: 1.7rem;
   }
 }
 
@@ -1843,6 +1844,11 @@ main {
 }
 .submit_btn a {
   width: 49%;
+}
+@media screen and (max-width: 767px) {
+  .submit_btn .pass_reset {
+    font-size: 1.6rem;
+  }
 }
 
 .form_part_input .not_merge {
