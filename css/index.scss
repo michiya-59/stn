@@ -623,11 +623,25 @@ main{
   border: 1px solid #AFAFAF;
   font-size: 1.3rem;
   border-radius: 0.3rem;
+  @include responsive.responsive_media(tab){
+    height: 5.5rem;
+    font-size: 2.3rem;
+  }
+  @include responsive.responsive_media(sp){
+    height: 5.5rem;
+    font-size: 2rem;
+  }
 }
 .form_select span{
   font-size: 1.6rem;
   display: inline-block;
   vertical-align: middle;
+  @include responsive.responsive_media(tab){
+    font-size: 3rem;
+  }
+  @include responsive.responsive_media(sp){
+    font-size: 2.5rem;
+  }
 }
 .search .search_btn{
   width: 6.1rem;
@@ -1555,6 +1569,14 @@ main{
       padding: 0.5rem 0.6rem;
     }
   }
+  @include responsive.responsive_media(tab){
+    p{
+      font-size: 2rem;
+    }
+    span{
+      line-height: 2.7rem;
+    }
+  }
 }
 .form_part_input{
   padding: 1rem 1.5rem;
@@ -1565,6 +1587,12 @@ main{
     width: 30%;
     @include responsive.responsive_media(tab){
       width: 100%;
+      height: 5.5rem;
+      font-size: 2.3rem;
+    }
+    @include responsive.responsive_media(sp){
+      height: 4.5rem;
+      font-size: 2rem;
     }
   }
   p{
@@ -1584,10 +1612,26 @@ main{
   display: flex;
   .gender_content{
     margin-right: 1rem;
+    @include responsive.responsive_media(tab){
+      font-size: 2.5rem;
+      margin-top: 0;
+      input{
+        width: 3.5rem;
+      }
+    }
+    @include responsive.responsive_media(sp){
+      font-size: 2rem;
+    }
   }
 }
 .avatar, .event_image, .document_file, .video_file{
   border: none;
+  @include responsive.responsive_media(tab){
+    font-size: 2.6rem;
+  }
+  @include responsive.responsive_media(sp){
+    font-size: 2rem;
+  }
 }
 .submit_btn{
   display: flex;
@@ -2098,12 +2142,12 @@ main{
     margin-top: 0;
   }
   #nav-icon span:nth-child(1) {
-    top:16px
+    top:13px
   }
   #nav-icon span:nth-child(2) {
-    top: 26px
+    top: 24px
   }
   #nav-icon span:nth-child(3) {
-    top: 37px
+    top: 36px
   }
 }
