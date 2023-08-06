@@ -1871,17 +1871,23 @@ main {
 @media screen and (max-width: 767px) {
   .login_icon {
     margin-top: 37rem;
-    width: 55rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .login_icon {
     margin-top: 25rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .login_icon {
     margin-top: 20rem;
+    width: 42rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .login_icon {
+    margin-top: 16rem;
+    width: 36rem;
   }
 }
 
@@ -2022,6 +2028,11 @@ main {
 @media screen and (max-width: 430px) {
   .wave {
     height: 34%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .wave {
+    height: 29%;
   }
 }
 

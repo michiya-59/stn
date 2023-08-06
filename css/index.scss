@@ -1666,13 +1666,17 @@ main{
   }
   @include responsive.responsive_media(sp){
     margin-top: 37rem;
-    width: 55rem;
   }
-  @include responsive.responsive_media(sp_375){
+  @include responsive.responsive_media(sp_390){
     margin-top: 25rem;
   }
-  @include responsive.responsive_media(sp_320){
+  @include responsive.responsive_media(sp_375){
     margin-top: 20rem;
+    width: 42rem;
+  }
+  @include responsive.responsive_media(sp_320){
+    margin-top: 16rem;
+    width: 36rem;
   }
 }
 .login_form{
@@ -1790,6 +1794,9 @@ main{
   }
   @include responsive.responsive_media(sp_430){
     height: 34%;
+  }
+  @include responsive.responsive_media(sp_390){
+    height: 29%;
   }
 }
 .wave svg {
