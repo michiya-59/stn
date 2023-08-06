@@ -1784,9 +1784,14 @@ main {
   color: #888888;
   margin-top: 0.6rem;
 }
+@media screen and (max-width: 1024px) {
+  .form_part_input p {
+    font-size: 2.5rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .form_part_input p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
