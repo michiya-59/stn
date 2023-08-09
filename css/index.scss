@@ -326,10 +326,10 @@ $border_radius: 0.5rem;
   margin-left: auto;
   font-size: 1.6rem;
   width: 6.4rem;
+  text-align: center;
   @include responsive.responsive_media(sp){
     line-height: 3.5rem;
     width: 11rem;
-    text-align: center;
   }
 }
 .not_border{
@@ -584,10 +584,16 @@ main{
     font-size: 1.2rem;
   }
 }
+.approval_switch_btn{
+  width: 55rem;
+  a{
+    width: 26.5rem;
+  }
+}
 
-.reservation_switch_btn{
+.reservation_switch_btn, .approval_switch_btn{
   display: flex;
-  width: 40rem;
+  width: 55rem;
   margin: 0 auto 1rem auto;
   justify-content: space-between;
   a:nth-child(1){
@@ -607,6 +613,7 @@ main{
     }
   }
 }
+
 
 .search select{
   padding: 0.5rem 1rem;
@@ -1307,13 +1314,10 @@ main{
 
 
 // introducer
-.introducer_container {
+.introducer_container{
   background: white;
   padding: 2rem;
   margin-top: 4rem;
-  .introducer_list_container{
-    margin-top: 3rem;
-  }
 }
 @include responsive.responsive_media(tab){
   .introducer_list_container table thead tr{
@@ -2165,5 +2169,55 @@ main{
   }
   #nav-icon span:nth-child(3) {
     top: 36px
+  }
+}
+
+// approval
+.approval_detail_btn{
+  padding: 0.5rem 2rem;
+}
+.approval_container table tbody tr td:nth-child(1){
+  padding-right: 0;
+}
+.approval_thead_tr th{
+  width: 10%;
+}
+@include responsive.responsive_media(sp){
+  .approval_thead_tr th:nth-child(1){
+    width: 5%;
+  }
+  .approval_thead_tr th:nth-child(2){
+    width: 6%;
+  }
+  .approval_thead_tr th:nth-child(3){
+    width: 4%;
+  }
+}
+.approval_tbody_tr{
+  padding: 1rem 4rem;
+  line-height: 3rem;
+  td{
+    text-align: left;
+    width: 23.39%;
+    padding: 0;
+  }
+  @include responsive.responsive_media(sp){
+    padding: 1rem;
+    line-height: 3rem;
+    height: 5rem;
+    td{
+      width: 21.8%;
+      a{
+        display: block;
+        line-height: 1.5rem;
+        width: 8rem;
+      }
+    }
+    td:nth-child(2){
+      width: 23.7%;
+    }
+    td:nth-child(3){
+      width: 19%;
+    }
   }
 }
