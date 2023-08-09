@@ -668,18 +668,14 @@ main {
   }
 }
 
-.approval_switch_btn {
-  width: 55rem;
-}
-.approval_switch_btn a {
-  width: 26.5rem;
-}
-
 .reservation_switch_btn, .approval_switch_btn {
   display: flex;
   width: 55rem;
   margin: 0 auto 1rem auto;
   justify-content: space-between;
+}
+.reservation_switch_btn a, .approval_switch_btn a {
+  width: 26.5rem;
 }
 .reservation_switch_btn a:nth-child(1), .approval_switch_btn a:nth-child(1) {
   color: #EACDA3;

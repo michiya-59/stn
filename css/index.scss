@@ -584,18 +584,15 @@ main{
     font-size: 1.2rem;
   }
 }
-.approval_switch_btn{
-  width: 55rem;
-  a{
-    width: 26.5rem;
-  }
-}
 
 .reservation_switch_btn, .approval_switch_btn{
   display: flex;
   width: 55rem;
   margin: 0 auto 1rem auto;
   justify-content: space-between;
+  a{
+    width: 26.5rem;
+  }
   a:nth-child(1){
     color: #EACDA3;
     background: linear-gradient(90deg, rgba(234, 205, 163, 0.16) 0%, rgba(214, 174, 123, 0.16) 100%);
